@@ -495,8 +495,9 @@
 
     .commands-list {
       margin-top: 10px;
-      max-height: calc(100vh - 280px);
       overflow-y: auto;
+      overflow-x: hidden;
+      height: calc(100vh - 250px); /* allows consistent scrolling */
       padding-right: 4px;
       display: flex;
       flex-direction: column;
@@ -513,7 +514,7 @@
       gap: 5px;
       font-size: 12px;
       position: relative;
-      overflow: hidden;
+      overflow: visible;
     }
 
     .cmd-header {
