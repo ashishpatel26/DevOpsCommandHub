@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>DevOps Command Hub</title>
@@ -35,9 +36,13 @@
     html,
     body {
       height: 100%;
-      background: radial-gradient(circle at top, #0f172a 0, #020617 55%, #020617 100%);
+      background: radial-gradient(circle at top,
+          #0f172a 0,
+          #020617 55%,
+          #020617 100%);
       color: var(--text-main);
-      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
     }
 
     body {
@@ -56,7 +61,9 @@
       width: var(--sidebar-width);
       padding: 20px 16px 18px;
       border-right: 1px solid rgba(148, 163, 184, 0.25);
-      background: linear-gradient(160deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.95));
+      background: linear-gradient(160deg,
+          rgba(15, 23, 42, 0.9),
+          rgba(15, 23, 42, 0.95));
       box-shadow: 12px 0 40px rgba(15, 23, 42, 0.8);
       display: flex;
       flex-direction: column;
@@ -76,11 +83,15 @@
       width: 32px;
       height: 32px;
       border-radius: 999px;
-      background: radial-gradient(circle at 20% 0%, #38bdf8 0, #1d4ed8 40%, #020617 100%);
+      background: radial-gradient(circle at 20% 0%,
+          #38bdf8 0,
+          #1d4ed8 40%,
+          #020617 100%);
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.4), 0 16px 35px rgba(15, 23, 42, 0.9);
+      box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.4),
+        0 16px 35px rgba(15, 23, 42, 0.9);
       font-size: 18px;
       font-weight: 700;
     }
@@ -135,7 +146,8 @@
       font-size: 13px;
       border: 1px solid transparent;
       cursor: pointer;
-      transition: background var(--transition-fast), border-color var(--transition-fast), transform 0.12s ease-out;
+      transition: background var(--transition-fast),
+        border-color var(--transition-fast), transform 0.12s ease-out;
     }
 
     .tool-item-main {
@@ -171,9 +183,12 @@
     }
 
     .tool-item.active {
-      background: radial-gradient(circle at 0 0, rgba(56, 189, 248, 0.14), rgba(15, 23, 42, 0.98));
+      background: radial-gradient(circle at 0 0,
+          rgba(56, 189, 248, 0.14),
+          rgba(15, 23, 42, 0.98));
       border-color: rgba(56, 189, 248, 0.9);
-      box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.6), 0 10px 25px rgba(15, 23, 42, 0.8);
+      box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.6),
+        0 10px 25px rgba(15, 23, 42, 0.8);
     }
 
     .tool-hotkey {
@@ -212,7 +227,9 @@
       position: relative;
       padding: 18px 24px 18px 24px;
       border-bottom: 1px solid rgba(31, 41, 55, 0.8);
-      background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.2), rgba(15, 23, 42, 0.95));
+      background: radial-gradient(circle at top left,
+          rgba(56, 189, 248, 0.2),
+          rgba(15, 23, 42, 0.95));
       overflow: hidden;
       z-index: 10;
     }
@@ -406,7 +423,9 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      background: radial-gradient(circle at 0% 0%, rgba(56, 189, 248, 0.6), rgba(15, 23, 42, 1));
+      background: radial-gradient(circle at 0% 0%,
+          rgba(56, 189, 248, 0.6),
+          rgba(15, 23, 42, 1));
       font-size: 11px;
     }
 
@@ -428,7 +447,9 @@
       gap: 6px;
       border-radius: 999px;
       border: 1px solid rgba(51, 65, 85, 0.9);
-      background: radial-gradient(circle at top, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.99));
+      background: radial-gradient(circle at top,
+          rgba(15, 23, 42, 0.95),
+          rgba(15, 23, 42, 0.99));
       padding: 4px 10px;
     }
 
@@ -474,7 +495,8 @@
       background: rgba(15, 23, 42, 0.95);
       color: var(--text-soft);
       cursor: pointer;
-      transition: background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+      transition: background var(--transition-fast),
+        border-color var(--transition-fast), color var(--transition-fast);
     }
 
     .filter-pill.active {
@@ -497,7 +519,8 @@
       margin-top: 10px;
       overflow-y: auto;
       overflow-x: hidden;
-      height: calc(100vh - 250px); /* allows consistent scrolling */
+      height: calc(100vh - 250px);
+      /* allows consistent scrolling */
       padding-right: 4px;
       display: flex;
       flex-direction: column;
@@ -525,7 +548,8 @@
     }
 
     .cmd-main-line {
-      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo,
+        Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
       font-size: 12px;
       white-space: nowrap;
       overflow: hidden;
@@ -541,13 +565,16 @@
       border: 1px solid rgba(30, 64, 175, 0.9);
       padding: 3px 8px;
       font-size: 11px;
-      background: radial-gradient(circle at top, rgba(37, 99, 235, 0.35), rgba(15, 23, 42, 0.98));
+      background: radial-gradient(circle at top,
+          rgba(37, 99, 235, 0.35),
+          rgba(15, 23, 42, 0.98));
       color: var(--text-main);
       cursor: pointer;
       display: inline-flex;
       align-items: center;
       gap: 4px;
-      transition: background var(--transition-fast), transform 0.08s ease-out, box-shadow 0.08s ease-out;
+      transition: background var(--transition-fast), transform 0.08s ease-out,
+        box-shadow 0.08s ease-out;
     }
 
     .cmd-copy-btn:hover {
@@ -646,7 +673,8 @@
       display: flex;
       flex-direction: column;
       gap: 3px;
-      transition: border-color var(--transition-fast), background var(--transition-fast), transform 0.08s ease-out;
+      transition: border-color var(--transition-fast),
+        background var(--transition-fast), transform 0.08s ease-out;
     }
 
     .flow-item:hover {
@@ -816,11 +844,12 @@
     }
   </style>
 </head>
+
 <body>
   <div class="app-shell">
     <aside class="sidebar">
       <div class="logo-block">
-        <div style="display:flex;align-items:center;gap:8px;">
+        <div style="display: flex; align-items: center; gap: 8px">
           <div class="logo-mark">DH</div>
           <div class="logo-text">
             <div class="logo-title">DevOps Command Hub</div>
@@ -840,22 +869,29 @@
         <div class="tool-item" data-mode="most-used">
           <div class="tool-item-main">
             <span class="tool-name">Most used 20%</span>
-            <div class="tool-meta"><span>Commands that cover 80% of work</span></div>
+            <div class="tool-meta">
+              <span>Commands that cover 80% of work</span>
+            </div>
           </div>
           <span class="tool-hotkey">M</span>
         </div>
         <div class="tool-item" data-mode="flows">
           <div class="tool-item-main">
             <span class="tool-name">Scenario flows</span>
-            <div class="tool-meta"><span>End-to-end, task-first walkthroughs</span></div>
+            <div class="tool-meta">
+              <span>End-to-end, task-first walkthroughs</span>
+            </div>
           </div>
           <span class="tool-hotkey">F</span>
         </div>
       </div>
 
       <div class="sidebar-footer">
-        <span>Focus: <strong>Docker → K8s → Git → CI/CD → IaC → Cloud → Observability → Security</strong></span>
-        <span>Tip: hit <span class="hint-kbd">/</span> to search, <span class="hint-kbd">↑ ↓</span> to scan commands.</span>
+        <span>Focus:
+          <strong>Docker → K8s → Git → CI/CD → IaC → Cloud → Observability →
+            Security</strong></span>
+        <span>Tip: hit <span class="hint-kbd">/</span> to search,
+          <span class="hint-kbd">↑ ↓</span> to scan commands.</span>
       </div>
     </aside>
 
@@ -871,12 +907,15 @@
               </h1>
             </div>
             <p class="hero-subtitle">
-              Pick a tool on the left, then filter by scenario (build, debug, deploy, rollback, inspect,
-              troubleshooting). Every command is optimized for daily DevOps use — no man page noise.
+              Pick a tool on the left, then filter by scenario (build, debug,
+              deploy, rollback, inspect, troubleshooting). Every command is
+              optimized for daily DevOps use — no man page noise.
             </p>
             <div class="hero-meta-row">
-              <span>Docker · Kubernetes · Git · CI/CD · Terraform/Ansible · Cloud CLIs · Observability · Security</span>
-              <span>Copy-paste ready · 80/20 selection · Terminal-native syntax</span>
+              <span>Docker · Kubernetes · Git · CI/CD · Terraform/Ansible · Cloud
+                CLIs · Observability · Security</span>
+              <span>Copy-paste ready · 80/20 selection · Terminal-native
+                syntax</span>
             </div>
           </div>
           <aside class="hero-right">
@@ -888,8 +927,8 @@
               <span class="pill-chip" id="current-tool-kind">Containers</span>
             </div>
             <p class="card-subtitle" id="current-tool-summary">
-              Docker daily-driver commands for build, tag, push, run, exec, logs, prune, inspect, and local registry
-              workflows.
+              Docker daily-driver commands for build, tag, push, run, exec,
+              logs, prune, inspect, and local registry workflows.
             </p>
             <div class="stat-grid">
               <div class="stat-pill">
@@ -927,12 +966,8 @@
             <div class="search-row">
               <div class="search-input-wrap">
                 <span class="icon">/</span>
-                <input
-                  type="text"
-                  id="search-input"
-                  class="search-input"
-                  placeholder="Search by task, flag, or command snippet (e.g. 'restart deployment', '-p port')"
-                />
+                <input type="text" id="search-input" class="search-input"
+                  placeholder="Search by task, flag, or command snippet (e.g. 'restart deployment', '-p port')" />
                 <span class="kbd">Ctrl + K</span>
               </div>
               <select id="scenario-select" class="filter-select">
@@ -953,8 +988,9 @@
               </div>
             </div>
             <p class="tool-summary" id="tool-summary-text">
-              Scenarios are grouped by task so you can move from code to production without searching the docs: build,
-              debug, deploy, observe, roll back.
+              Scenarios are grouped by task so you can move from code to
+              production without searching the docs: build, debug, deploy,
+              observe, roll back.
             </p>
             <div class="tool-badges" id="tool-badges"></div>
             <div class="flow-list" id="flow-list"></div>
@@ -967,8 +1003,9 @@
               </div>
             </div>
             <div class="flow-steps" id="flow-steps">
-              Select a flow (e.g. "Build → Tag → Push image to registry") to see the 4–7 commands that get you from
-              local dev to a running environment.
+              Select a flow (e.g. "Build → Tag → Push image to registry") to
+              see the 4–7 commands that get you from local dev to a running
+              environment.
             </div>
           </div>
         </div>
@@ -985,1392 +1022,1958 @@
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script>
-  // --- Data model: 80/20, task-first commands ---
-  const tools = {
-    docker: {
-      label: "docker",
-      name: "Docker",
-      kind: "Containers",
-      summary:
-        "Core image + container lifecycle: build, tag, push, run, exec, logs, clean-up, and low-friction debugging.",
-      badges: ["build & run", "networking", "cleanup", "debug"],
-      scenarios: {
-        build: "Build image from Dockerfile and tag it correctly.",
-        run: "Run and iterate on containers with ports, env, and volumes.",
-        debug: "Inspect, exec into, and tail logs of running containers.",
-        cleanup: "Free disk space: remove exited containers, dangling images, and unused data.",
-        registry: "Tag and push images to registries (Docker Hub, ECR, GCR).",
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script>
+    // --- Data model: 80/20, task-first commands ---
+    const tools = {
+      docker: {
+        label: "docker",
+        name: "Docker",
+        kind: "Containers",
+        summary:
+          "Core image + container lifecycle: build, tag, push, run, exec, logs, clean-up, and low-friction debugging.",
+        badges: ["build & run", "networking", "cleanup", "debug"],
+        scenarios: {
+          build: "Build image from Dockerfile and tag it correctly.",
+          run: "Run and iterate on containers with ports, env, and volumes.",
+          debug: "Inspect, exec into, and tail logs of running containers.",
+          cleanup:
+            "Free disk space: remove exited containers, dangling images, and unused data.",
+          registry:
+            "Tag and push images to registries (Docker Hub, ECR, GCR).",
+        },
+        flows: [
+          {
+            id: "docker-build-run-debug",
+            title: "Build → Run → Debug container",
+            level: "local dev",
+            steps: [
+              "docker build -t app:dev .",
+              "docker run --rm -it -p 3000:3000 --name app app:dev",
+              "docker logs -f app",
+              "docker exec -it app /bin/sh",
+            ],
+          },
+          {
+            id: "docker-build-push-registry",
+            title: "Build → Tag → Push to registry",
+            level: "image pipeline",
+            steps: [
+              "docker build -t app:1.0.0 .",
+              "docker tag app:1.0.0 your-registry/app:1.0.0",
+              "docker login your-registry",
+              "docker push your-registry/app:1.0.0",
+            ],
+          },
+          {
+            id: "docker-cleanup-cycle",
+            title: "Stop → Prune containers/images",
+            level: "ops hygiene",
+            steps: [
+              "docker ps -a",
+              "docker stop <id>",
+              "docker rm <id>",
+              "docker system df",
+              "docker system prune -af",
+            ],
+          },
+        ],
+        commands: [
+          {
+            cmd: "docker ps",
+            desc: "List running containers (add -a to include stopped).",
+            scenario: "debug",
+            tags: ["list", "containers", "status"],
+            hot: true,
+          },
+          {
+            cmd: "docker ps -a",
+            desc: "List all containers, including exited ones.",
+            scenario: "debug",
+            tags: ["list", "exited"],
+          },
+          {
+            cmd: "docker images",
+            desc: "List local images with repository and tag.",
+            scenario: "build",
+            tags: ["images"],
+          },
+          {
+            cmd: "docker build -t app:dev .",
+            desc: "Build image from Dockerfile in current directory and tag as app:dev.",
+            scenario: "build",
+            tags: ["build", "tag"],
+            hot: true,
+          },
+          {
+            cmd: "docker run --rm -it app:dev /bin/sh",
+            desc: "Run an ephemeral container and drop into a shell for debugging.",
+            scenario: "run",
+            tags: ["debug", "shell", "interactive"],
+          },
+          {
+            cmd: "docker run -d -p 8080:80 --name web app:dev",
+            desc: "Run container in background, mapping local 8080 → container 80.",
+            scenario: "run",
+            tags: ["ports", "background"],
+          },
+          {
+            cmd: "docker logs -f web",
+            desc: "Tail logs for the container named 'web' (follow mode).",
+            scenario: "debug",
+            tags: ["logs", "tail"],
+            hot: true,
+          },
+          {
+            cmd: "docker exec -it web /bin/sh",
+            desc: "SSH-style attach into running container for debugging.",
+            scenario: "debug",
+            tags: ["exec", "shell"],
+          },
+          {
+            cmd: "docker stop web && docker rm web",
+            desc: "Stop and remove a container by name.",
+            scenario: "cleanup",
+            tags: ["stop", "remove"],
+          },
+          {
+            cmd: "docker system df",
+            desc: "Show Docker disk usage: images, containers, volumes, cache.",
+            scenario: "cleanup",
+            tags: ["disk", "size"],
+          },
+          {
+            cmd: "docker system prune -af --volumes",
+            desc: "Clean up dangling images, stopped containers, networks, and unused volumes.",
+            scenario: "cleanup",
+            tags: ["prune", "cleanup", "disk"],
+          },
+          {
+            cmd: "docker login your-registry",
+            desc: "Authenticate to a private registry.",
+            scenario: "registry",
+            tags: ["registry", "login"],
+          },
+          {
+            cmd: "docker tag app:dev your-registry/app:dev",
+            desc: "Retag local image with remote registry prefix.",
+            scenario: "registry",
+            tags: ["tag", "registry"],
+          },
+          {
+            cmd: "docker push your-registry/app:dev",
+            desc: "Push tagged image to registry.",
+            scenario: "registry",
+            tags: ["push", "registry"],
+          },
+          {
+            cmd: "docker pull your-registry/app:dev",
+            desc: "Pull image from registry to local machine.",
+            scenario: "registry",
+            tags: ["pull", "registry"],
+          },
+          {
+            cmd: "docker network ls",
+            desc: "List Docker networks.",
+            scenario: "debug",
+            tags: ["network"],
+          },
+          {
+            cmd: "docker inspect web",
+            desc: "Inspect container details (env, mounts, network, image).",
+            scenario: "debug",
+            tags: ["inspect", "json"],
+          },
+        ],
       },
-      flows: [
-        {
-          id: "docker-build-run-debug",
-          title: "Build → Run → Debug container",
-          level: "local dev",
-          steps: [
-            "docker build -t app:dev .",
-            "docker run --rm -it -p 3000:3000 --name app app:dev",
-            "docker logs -f app",
-            "docker exec -it app /bin/sh",
-          ],
+
+      kubernetes: {
+        label: "kubernetes",
+        name: "Kubernetes",
+        kind: "Clusters",
+        summary:
+          "Full kubectl command suite: contexts, apply, rollout, logs, exec, patches, scaling, debugging, nodes, services, events, secrets, config, and introspection.",
+        badges: ["kubectl", "helm", "rollouts", "debug", "context", "apply"],
+        scenarios: {
+          discover:
+            "Find and inspect Kubernetes resources across namespaces.",
+          debug:
+            "Describe, logs, exec, debug sessions, events, troubleshooting.",
+          rollout: "Apply, rollout, restart, undo, and image updates.",
+          config: "Switch contexts, configure kubeconfig, set namespace.",
+          scale: "Scale deployments, RS, RC, jobs, and autoscaling.",
+          patch: "Patch resources using merge, strategic, JSON patch.",
+          nodes: "Node operations, taints, drain, top, cluster info.",
+          exec: "Execute into pods, port-forward, copy files.",
+          cleanup: "Delete pods, services, resources, namespaces safely.",
+          format:
+            "Advanced kubectl output formatting with jsonpath, templates, columns.",
         },
-        {
-          id: "docker-build-push-registry",
-          title: "Build → Tag → Push to registry",
-          level: "image pipeline",
-          steps: [
-            "docker build -t app:1.0.0 .",
-            "docker tag app:1.0.0 your-registry/app:1.0.0",
-            "docker login your-registry",
-            "docker push your-registry/app:1.0.0",
-          ],
-        },
-        {
-          id: "docker-cleanup-cycle",
-          title: "Stop → Prune containers/images",
-          level: "ops hygiene",
-          steps: [
-            "docker ps -a",
-            "docker stop <id>",
-            "docker rm <id>",
-            "docker system df",
-            "docker system prune -af",
-          ],
-        },
-      ],
-      commands: [
-        {
-          cmd: "docker ps",
-          desc: "List running containers (add -a to include stopped).",
-          scenario: "debug",
-          tags: ["list", "containers", "status"],
-          hot: true,
-        },
-        {
-          cmd: "docker ps -a",
-          desc: "List all containers, including exited ones.",
-          scenario: "debug",
-          tags: ["list", "exited"],
-        },
-        {
-          cmd: "docker images",
-          desc: "List local images with repository and tag.",
-          scenario: "build",
-          tags: ["images"],
-        },
-        {
-          cmd: "docker build -t app:dev .",
-          desc: "Build image from Dockerfile in current directory and tag as app:dev.",
-          scenario: "build",
-          tags: ["build", "tag"],
-          hot: true,
-        },
-        {
-          cmd: "docker run --rm -it app:dev /bin/sh",
-          desc: "Run an ephemeral container and drop into a shell for debugging.",
-          scenario: "run",
-          tags: ["debug", "shell", "interactive"],
-        },
-        {
-          cmd: "docker run -d -p 8080:80 --name web app:dev",
-          desc: "Run container in background, mapping local 8080 → container 80.",
-          scenario: "run",
-          tags: ["ports", "background"],
-        },
-        {
-          cmd: "docker logs -f web",
-          desc: "Tail logs for the container named 'web' (follow mode).",
-          scenario: "debug",
-          tags: ["logs", "tail"],
-          hot: true,
-        },
-        {
-          cmd: "docker exec -it web /bin/sh",
-          desc: "SSH-style attach into running container for debugging.",
-          scenario: "debug",
-          tags: ["exec", "shell"],
-        },
-        {
-          cmd: "docker stop web && docker rm web",
-          desc: "Stop and remove a container by name.",
-          scenario: "cleanup",
-          tags: ["stop", "remove"],
-        },
-        {
-          cmd: "docker system df",
-          desc: "Show Docker disk usage: images, containers, volumes, cache.",
-          scenario: "cleanup",
-          tags: ["disk", "size"],
-        },
-        {
-          cmd: "docker system prune -af --volumes",
-          desc: "Clean up dangling images, stopped containers, networks, and unused volumes.",
-          scenario: "cleanup",
-          tags: ["prune", "cleanup", "disk"],
-        },
-        {
-          cmd: "docker login your-registry",
-          desc: "Authenticate to a private registry.",
-          scenario: "registry",
-          tags: ["registry", "login"],
-        },
-        {
-          cmd: "docker tag app:dev your-registry/app:dev",
-          desc: "Retag local image with remote registry prefix.",
-          scenario: "registry",
-          tags: ["tag", "registry"],
-        },
-        {
-          cmd: "docker push your-registry/app:dev",
-          desc: "Push tagged image to registry.",
-          scenario: "registry",
-          tags: ["push", "registry"],
-        },
-        {
-          cmd: "docker pull your-registry/app:dev",
-          desc: "Pull image from registry to local machine.",
-          scenario: "registry",
-          tags: ["pull", "registry"],
-        },
-        {
-          cmd: "docker network ls",
-          desc: "List Docker networks.",
-          scenario: "debug",
-          tags: ["network"],
-        },
-        {
-          cmd: "docker inspect web",
-          desc: "Inspect container details (env, mounts, network, image).",
-          scenario: "debug",
-          tags: ["inspect", "json"],
-        },
-      ],
-    },
-    kubernetes: {
-      label: "kubernetes",
-      name: "Kubernetes",
-      kind: "Clusters",
-      summary:
-        "kubectl + Helm essentials for describe, get, logs, exec, rollouts, and quick deploys across namespaces.",
-      badges: ["kubectl", "helm", "rollouts", "debug"],
-      scenarios: {
-        discover: "Quickly see pods, services, and deployments across namespaces.",
-        debug: "Describe resources, get logs, and exec into pods.",
-        rollout: "Apply manifests, watch rollout, and roll back safely.",
-        config: "Switch contexts/namespaces without breaking muscle memory.",
+        flows: [
+          {
+            id: "k8s-debug-pod",
+            title: "Find pod → Describe → Logs → Exec",
+            level: "cluster debug",
+            steps: [
+              "kubectl get pods -n default",
+              "kubectl describe pod <name> -n default",
+              "kubectl logs -f <name> -n default",
+              "kubectl exec -it <name> -n default -- /bin/sh",
+            ],
+          },
+          {
+            id: "k8s-rolling-deploy",
+            title: "Apply manifest → Watch rollout",
+            level: "deploy",
+            steps: [
+              "kubectl apply -f deployment.yaml",
+              "kubectl rollout status deploy/app -n default",
+              "kubectl get pods -l app=app -n default",
+            ],
+          },
+        ],
+        commands: [
+          {
+            cmd: "kubectl config get-contexts",
+            desc: "List all kubectl contexts.",
+            scenario: "config",
+            tags: ["contexts"],
+            hot: true,
+          },
+          {
+            cmd: "kubectl config use-context <name>",
+            desc: "Switch context.",
+            scenario: "config",
+            tags: ["context", "switch"],
+          },
+          {
+            cmd: "kubectl config current-context",
+            desc: "Show current context.",
+            scenario: "config",
+            tags: ["context", "current"],
+          },
+          {
+            cmd: "kubectl config set-context --current --namespace=<ns>",
+            desc: "Set namespace for current context.",
+            scenario: "config",
+            tags: ["namespace"],
+          },
+          {
+            cmd: "kubectl config view",
+            desc: "View merged kubeconfig.",
+            scenario: "config",
+            tags: ["context", "config"],
+          },
+          {
+            cmd: "kubectl config unset users.<name>",
+            desc: "Remove a user from kubeconfig.",
+            scenario: "config",
+            tags: ["unset", "user"],
+          },
+          {
+            cmd: "source <(kubectl completion bash)",
+            desc: "Enable kubectl autocomplete (bash).",
+            scenario: "config",
+            tags: ["autocomplete", "bash"],
+          },
+
+          {
+            cmd: "kubectl get pods -A",
+            desc: "List all pods on cluster across all namespaces.",
+            scenario: "discover",
+            tags: ["pods", "all-ns"],
+            hot: true,
+          },
+          {
+            cmd: "kubectl get pods",
+            desc: "List pods in current namespace.",
+            scenario: "discover",
+            tags: ["pods"],
+          },
+          {
+            cmd: "kubectl get deploy",
+            desc: "List deployments.",
+            scenario: "discover",
+            tags: ["deployments"],
+          },
+          {
+            cmd: "kubectl get svc",
+            desc: "List services.",
+            scenario: "discover",
+            tags: ["services"],
+          },
+          {
+            cmd: "kubectl get nodes",
+            desc: "List nodes.",
+            scenario: "discover",
+            tags: ["nodes"],
+          },
+          {
+            cmd: "helm list -A",
+            desc: "List Helm releases.",
+            scenario: "discover",
+            tags: ["helm"],
+          },
+
+          {
+            cmd: "kubectl apply -f <file>",
+            desc: "Apply (create/update) manifest.",
+            scenario: "rollout",
+            tags: ["apply"],
+            hot: true,
+          },
+          {
+            cmd: "kubectl apply -f <dir>",
+            desc: "Apply all manifests in directory.",
+            scenario: "rollout",
+            tags: ["apply"],
+          },
+          {
+            cmd: "kubectl create deployment nginx --image=nginx",
+            desc: "Create a deployment imperatively.",
+            scenario: "rollout",
+            tags: ["create", "deployment"],
+          },
+          {
+            cmd: "kubectl rollout status deploy/<name>",
+            desc: "Check rollout status.",
+            scenario: "rollout",
+            tags: ["rollout"],
+          },
+          {
+            cmd: "kubectl rollout restart deploy/<name>",
+            desc: "Restart deployment.",
+            scenario: "rollout",
+            tags: ["restart"],
+          },
+          {
+            cmd: "kubectl rollout undo deploy/<name>",
+            desc: "Undo rollout to previous revision.",
+            scenario: "rollout",
+            tags: ["rollback"],
+          },
+          {
+            cmd: "kubectl create job hello --image=busybox -- echo 'Hello'",
+            desc: "Create job.",
+            scenario: "rollout",
+            tags: ["job"],
+          },
+          {
+            cmd: "kubectl create cronjob hello --image=busybox --schedule='*/1 * * * *' -- echo 'Hello'",
+            desc: "Create cronjob.",
+            scenario: "rollout",
+            tags: ["cronjob"],
+          },
+          {
+            cmd: "helm upgrade --install app ./chart -n app",
+            desc: "Install or upgrade Helm release.",
+            scenario: "rollout",
+            tags: ["helm", "upgrade"],
+          },
+
+          {
+            cmd: "kubectl describe pod <name>",
+            desc: "Get detailed status, conditions, and events for a pod.",
+            scenario: "debug",
+            tags: ["describe"],
+            hot: true,
+          },
+          {
+            cmd: "kubectl logs -f <pod>",
+            desc: "Stream logs from pod.",
+            scenario: "debug",
+            tags: ["logs", "follow"],
+          },
+          {
+            cmd: "kubectl logs <pod> -c <container>",
+            desc: "Logs from specific container.",
+            scenario: "debug",
+            tags: ["logs", "container"],
+          },
+          {
+            cmd: "kubectl get events --sort-by=.metadata.creationTimestamp",
+            desc: "List events sorted by time.",
+            scenario: "debug",
+            tags: ["events"],
+          },
+          {
+            cmd: "kubectl events --types=Warning",
+            desc: "List only warning events.",
+            scenario: "debug",
+            tags: ["events", "warnings"],
+          },
+
+          {
+            cmd: "kubectl exec -it <pod> -- /bin/sh",
+            desc: "Interactive shell into a running container.",
+            scenario: "exec",
+            tags: ["exec", "shell"],
+            hot: true,
+          },
+          {
+            cmd: "kubectl exec --stdin --tty <pod> -- /bin/bash",
+            desc: "Interactive bash shell.",
+            scenario: "exec",
+            tags: ["exec", "bash"],
+          },
+          {
+            cmd: "kubectl port-forward <pod> 5000:6000",
+            desc: "Forward local 5000 $\\rightarrow$ pod 6000.",
+            scenario: "exec",
+            tags: ["port-forward"],
+          },
+          {
+            cmd: "kubectl port-forward svc/<svc> 8080:80",
+            desc: "Forward service port.",
+            scenario: "exec",
+            tags: ["port-forward", "svc"],
+          },
+          {
+            cmd: "kubectl cp <pod>:/tmp/foo /tmp/bar",
+            desc: "Copy from pod to local.",
+            scenario: "exec",
+            tags: ["copy", "cp"],
+          },
+          {
+            cmd: "kubectl cp /tmp/foo <pod>:/tmp/bar",
+            desc: "Copy from local to pod.",
+            scenario: "exec",
+            tags: ["copy", "cp"],
+          },
+
+          {
+            cmd: "kubectl scale --replicas=3 deploy/<name>",
+            desc: "Scale deployment to 3 replicas.",
+            scenario: "scale",
+            tags: ["scale"],
+          },
+          {
+            cmd: "kubectl autoscale deployment <name> --min=2 --max=10",
+            desc: "Autoscale deployment (create HPA).",
+            scenario: "scale",
+            tags: ["autoscale"],
+          },
+
+          {
+            cmd: "kubectl edit deploy/<name>",
+            desc: "Edit a live resource definition in your default editor.",
+            scenario: "patch",
+            tags: ["edit"],
+            hot: true,
+          },
+          {
+            cmd: 'kubectl patch pod <name> -p \'{"spec":{"nodename":"node-1"}}\'',
+            desc: "Patch pod (merge patch).",
+            scenario: "patch",
+            tags: ["patch"],
+          },
+          {
+            cmd: 'kubectl patch deploy <name> --type=json -p=\'[{"op":"replace", "path":"/spec/replicas", "value":5}]\'',
+            desc: "Patch with JSON patch.",
+            scenario: "patch",
+            tags: ["json", "patch"],
+          },
+
+          {
+            cmd: "kubectl top nodes",
+            desc: "Show node CPU/memory usage metrics.",
+            scenario: "nodes",
+            tags: ["metrics"],
+          },
+          {
+            cmd: "kubectl describe node <name>",
+            desc: "Describe node.",
+            scenario: "nodes",
+            tags: ["describe", "node"],
+          },
+          {
+            cmd: "kubectl cordon <node>",
+            desc: "Mark node unschedulable (prep for maintenance).",
+            scenario: "nodes",
+            tags: ["cordon"],
+          },
+          {
+            cmd: "kubectl drain <node>",
+            desc: "Drain node for maintenance (cordon and evict pods).",
+            scenario: "nodes",
+            tags: ["drain"],
+          },
+          {
+            cmd: "kubectl uncordon <node>",
+            desc: "Mark node schedulable.",
+            scenario: "nodes",
+            tags: ["uncordon"],
+          },
+
+          {
+            cmd: "kubectl delete -f <file>",
+            desc: "Delete resources defined in a file.",
+            scenario: "cleanup",
+            tags: ["delete"],
+          },
+          {
+            cmd: "kubectl delete pod <name>",
+            desc: "Delete pod.",
+            scenario: "cleanup",
+            tags: ["delete", "pod"],
+          },
+          {
+            cmd: "kubectl delete pod <name> --now",
+            desc: "Force delete pod instantly (use with caution).",
+            scenario: "cleanup",
+            tags: ["force", "delete"],
+          },
+
+          {
+            cmd: "kubectl get pods -o wide",
+            desc: "Wide output for pods (includes node, IP).",
+            scenario: "format",
+            tags: ["wide"],
+          },
+          {
+            cmd: "kubectl get pods -o jsonpath='{.items[*].metadata.name}'",
+            desc: "Extract fields using jsonpath.",
+            scenario: "format",
+            tags: ["jsonpath"],
+          },
+          {
+            cmd: "kubectl get pods -A -o=custom-columns='NAME:.metadata.name,IMAGE:.spec.containers[*].image'",
+            desc: "Custom column output.",
+            scenario: "format",
+            tags: ["columns"],
+          },
+        ],
       },
-      flows: [
-        {
-          id: "k8s-debug-pod",
-          title: "Find pod → Describe → Logs → Exec",
-          level: "cluster debug",
-          steps: [
-            "kubectl get pods -n default",
-            "kubectl describe pod <name> -n default",
-            "kubectl logs -f <name> -n default",
-            "kubectl exec -it <name> -n default -- /bin/sh",
-          ],
+      git: {
+        label: "git",
+        name: "Git",
+        kind: "Source control",
+        summary:
+          "Daily Git workflow: status, diff, commit, stash, branches, rebase, and quick fixup/undo patterns.",
+        badges: ["branching", "stash", "rebase", "fixup"],
+        scenarios: {
+          status: "See what changed and which files are staged.",
+          commit: "Stage, commit, amend, and push with safety nets.",
+          branch: "Create, switch, and delete branches.",
+          sync: "Fetch, pull, and push changes to remotes.",
+          history: "View commit history and changes.",
+          stash: "Temporarily save local changes without committing.",
+          undo: "Revert commits and reset changes safely.",
+          advanced:
+            "Advanced operations like interactive rebase and cherry-picking.",
+          tags: "Create, list, and push version tags.",
+          setup: "Configure Git user and environment.",
+          init: "Initialize and clone repositories.",
         },
-        {
-          id: "k8s-rolling-deploy",
-          title: "Apply manifest → Watch rollout",
-          level: "deploy",
-          steps: [
-            "kubectl apply -f deployment.yaml",
-            "kubectl rollout status deploy/app -n default",
-            "kubectl get pods -l app=app -n default",
-          ],
-        },
-      ],
-      commands: [
-        {
-          cmd: "kubectl get pods",
-          desc: "List pods in current namespace.",
-          scenario: "discover",
-          tags: ["pods", "list"],
-          hot: true,
-        },
-        {
-          cmd: "kubectl get pods -A",
-          desc: "List pods across all namespaces.",
-          scenario: "discover",
-          tags: ["pods", "all-ns"],
-        },
-        {
-          cmd: "kubectl get svc",
-          desc: "List services in current namespace.",
-          scenario: "discover",
-          tags: ["services"],
-        },
-        {
-          cmd: "kubectl get deploy",
-          desc: "List deployments in current namespace.",
-          scenario: "discover",
-          tags: ["deployments"],
-        },
-        {
-          cmd: "kubectl describe pod <name>",
-          desc: "Detailed pod description with events and status.",
-          scenario: "debug",
-          tags: ["describe", "events"],
-        },
-        {
-          cmd: "kubectl logs -f <pod>",
-          desc: "Tail logs for a pod.",
-          scenario: "debug",
-          tags: ["logs", "tail"],
-        },
-        {
-          cmd: "kubectl exec -it <pod> -- /bin/sh",
-          desc: "Exec into running pod for debugging.",
-          scenario: "debug",
-          tags: ["exec", "shell"],
-        },
-        {
-          cmd: "kubectl apply -f k8s/",
-          desc: "Apply all manifests in a directory.",
-          scenario: "rollout",
-          tags: ["apply", "deploy"],
-        },
-        {
-          cmd: "kubectl rollout status deploy/<name>",
-          desc: "Watch deployment rollout status.",
-          scenario: "rollout",
-          tags: ["rollout", "deploy"],
-        },
-        {
-          cmd: "kubectl rollout undo deploy/<name>",
-          desc: "Roll back deployment to previous revision.",
-          scenario: "rollout",
-          tags: ["rollback"],
-        },
-        {
-          cmd: "kubectl config get-contexts",
-          desc: "List kubectl contexts.",
-          scenario: "config",
-          tags: ["contexts"],
-        },
-        {
-          cmd: "kubectl config use-context <name>",
-          desc: "Switch to another context.",
-          scenario: "config",
-          tags: ["contexts", "switch"],
-        },
-        {
-          cmd: "helm list -A",
-          desc: "List Helm releases across all namespaces.",
-          scenario: "discover",
-          tags: ["helm", "releases"],
-        },
-        {
-          cmd: "helm upgrade --install app ./chart -n app",
-          desc: "Install or upgrade a Helm release.",
-          scenario: "rollout",
-          tags: ["helm", "upgrade", "install"],
-        },
-      ],
-    },
-    git: {
-      label: "git",
-      name: "Git",
-      kind: "Source control",
-      summary:
-        "Daily Git workflow: status, diff, commit, stash, branches, rebase, and quick fixup/undo patterns.",
-      badges: ["branching", "stash", "rebase", "fixup"],
-      scenarios: {
-        status: "See what changed and which files are staged.",
-        commit: "Stage, commit, amend, and push with safety nets.",
-        branch: "Create, switch, and delete branches.",
-        sync: "Pull, rebase, and push with minimal conflicts.",
-        stash: "Temporarily save local changes without committing.",
+        flows: [
+          {
+            id: "git-feature-branch",
+            title: "Create feature branch → Commit → Push",
+            level: "feature dev",
+            steps: [
+              "git checkout -b feature/x",
+              "git status",
+              "git add .",
+              "git commit -m 'feat: implement x'",
+              "git push -u origin feature/x",
+            ],
+          },
+          {
+            id: "git-sync-main",
+            title: "Sync with main using rebase",
+            level: "sync",
+            steps: [
+              "git fetch origin",
+              "git rebase origin/main",
+              "git push --force-with-lease",
+            ],
+          },
+          {
+            id: "git-interactive-rebase",
+            title: "Interactive rebase to clean up history",
+            level: "advanced",
+            steps: [
+              "git rebase -i HEAD~3",
+              "# reorder, squash, or fixup commits",
+              "git push --force-with-lease",
+            ],
+          },
+        ],
+        commands: [
+          {
+            cmd: "git status -sb",
+            desc: "Compact status with branch info.",
+            scenario: "status",
+            tags: ["status", "branch"],
+            hot: true,
+          },
+          {
+            cmd: "git status",
+            desc: "Show working directory and staging changes.",
+            scenario: "status",
+            tags: ["status", "staging"],
+          },
+          {
+            cmd: "git diff",
+            desc: "Show unstaged changes.",
+            scenario: "status",
+            tags: ["diff"],
+          },
+          {
+            cmd: "git diff --staged",
+            desc: "Show staged changes.",
+            scenario: "status",
+            tags: ["diff", "staged"],
+          },
+          {
+            cmd: "git reset [file]",
+            desc: "Unstage file but keep changes.",
+            scenario: "status",
+            tags: ["reset", "unstage"],
+          },
+          {
+            cmd: 'git config --global user.name "[firstname lastname]"',
+            desc: "Set Git username globally.",
+            scenario: "setup",
+            tags: ["config", "user"],
+          },
+          {
+            cmd: 'git config --global user.email "[email]"',
+            desc: "Set Git email globally.",
+            scenario: "setup",
+            tags: ["config", "email"],
+          },
+          {
+            cmd: "git config --global color.ui auto",
+            desc: "Enable auto CLI colors.",
+            scenario: "setup",
+            tags: ["config", "ui"],
+          },
+          {
+            cmd: "git init",
+            desc: "Initialize a Git repository.",
+            scenario: "init",
+            tags: ["init"],
+          },
+          {
+            cmd: "git clone [url]",
+            desc: "Clone repository from remote URL.",
+            scenario: "init",
+            tags: ["clone", "remote"],
+          },
+          {
+            cmd: "git add .",
+            desc: "Stage all modified files.",
+            scenario: "commit",
+            tags: ["stage"],
+          },
+          {
+            cmd: "git add [file]",
+            desc: "Stage file for next commit.",
+            scenario: "commit",
+            tags: ["add", "stage"],
+          },
+          {
+            cmd: "git commit -m 'message'",
+            desc: "Commit staged changes.",
+            scenario: "commit",
+            tags: ["commit"],
+            hot: true,
+          },
+          {
+            cmd: "git commit --amend --no-edit",
+            desc: "Amend last commit message.",
+            scenario: "commit",
+            tags: ["amend"],
+          },
+          {
+            cmd: "git checkout -b feature/x",
+            desc: "Create and switch branch.",
+            scenario: "branch",
+            tags: ["branch", "create"],
+          },
+          {
+            cmd: "git branch",
+            desc: "List all branches.",
+            scenario: "branch",
+            tags: ["branch"],
+          },
+          {
+            cmd: "git branch [name]",
+            desc: "Create new branch.",
+            scenario: "branch",
+            tags: ["branch"],
+          },
+          {
+            cmd: "git checkout [branch]",
+            desc: "Switch branch (classic).",
+            scenario: "branch",
+            tags: ["checkout"],
+          },
+          {
+            cmd: "git switch main",
+            desc: "Switch branch (new command).",
+            scenario: "branch",
+            tags: ["switch"],
+          },
+          {
+            cmd: "git merge [branch]",
+            desc: "Merge branch into current.",
+            scenario: "branch",
+            tags: ["merge"],
+          },
+          {
+            cmd: "git branch -m <new>",
+            desc: "Rename current branch.",
+            scenario: "branch",
+            tags: ["rename"],
+          },
+          {
+            cmd: "git branch -d feature/x",
+            desc: "Delete merged branch.",
+            scenario: "branch",
+            tags: ["delete"],
+          },
+          {
+            cmd: "git push origin --delete feature/x",
+            desc: "Delete remote branch.",
+            scenario: "branch",
+            tags: ["remote", "delete"],
+          },
+          {
+            cmd: "git fetch origin",
+            desc: "Fetch origin updates.",
+            scenario: "sync",
+            tags: ["fetch"],
+          },
+          {
+            cmd: "git fetch [alias]",
+            desc: "Fetch all branches from remote.",
+            scenario: "sync",
+            tags: ["remote", "fetch"],
+          },
+          {
+            cmd: "git remote -v",
+            desc: "List configured remotes.",
+            scenario: "sync",
+            tags: ["remote"],
+          },
+          {
+            cmd: "git remote add [alias] [url]",
+            desc: "Add new remote alias.",
+            scenario: "sync",
+            tags: ["remote"],
+          },
+          {
+            cmd: "git fetch --prune",
+            desc: "Remove deleted remote branches.",
+            scenario: "sync",
+            tags: ["prune"],
+          },
+          {
+            cmd: "git pull",
+            desc: "Fetch + merge remote branch.",
+            scenario: "sync",
+            tags: ["pull"],
+          },
+          {
+            cmd: "git pull --rebase",
+            desc: "Rebase instead of merge.",
+            scenario: "sync",
+            tags: ["pull", "rebase"],
+          },
+          {
+            cmd: "git merge origin/main",
+            desc: "Merge remote main.",
+            scenario: "sync",
+            tags: ["merge", "remote"],
+          },
+          {
+            cmd: "git push -u origin main",
+            desc: "Push & set upstream.",
+            scenario: "sync",
+            tags: ["push"],
+          },
+          {
+            cmd: "git push [alias] [branch]",
+            desc: "Push branch to remote.",
+            scenario: "sync",
+            tags: ["push"],
+          },
+          {
+            cmd: "git push --force-with-lease",
+            desc: "Safe force push.",
+            scenario: "sync",
+            tags: ["push", "force"],
+          },
+          {
+            cmd: "git log --oneline --graph --decorate",
+            desc: "Compact pretty history.",
+            scenario: "history",
+            tags: ["log", "graph"],
+          },
+          {
+            cmd: "git log",
+            desc: "Show commit history.",
+            scenario: "history",
+            tags: ["log"],
+          },
+          {
+            cmd: "git show <commit>",
+            desc: "Show specific commit changes.",
+            scenario: "history",
+            tags: ["show"],
+          },
+          {
+            cmd: "git log branchB..branchA",
+            desc: "Show commits on A not on B.",
+            scenario: "history",
+            tags: ["log", "compare"],
+          },
+          {
+            cmd: "git log --follow [file]",
+            desc: "Show file history including renames.",
+            scenario: "history",
+            tags: ["log", "follow"],
+          },
+          {
+            cmd: "git log --stat -M",
+            desc: "Show commits with rename detection.",
+            scenario: "history",
+            tags: ["log", "rename"],
+          },
+          {
+            cmd: "git blame <file>",
+            desc: "Show line-by-line authorship.",
+            scenario: "history",
+            tags: ["blame"],
+          },
+          {
+            cmd: "git stash push -m 'wip'",
+            desc: "Stash with message.",
+            scenario: "stash",
+            tags: ["stash"],
+          },
+          {
+            cmd: "git stash",
+            desc: "Stash changes.",
+            scenario: "stash",
+            tags: ["stash"],
+          },
+          {
+            cmd: "git stash list",
+            desc: "List stashes.",
+            scenario: "stash",
+            tags: ["stash"],
+          },
+          {
+            cmd: "git stash pop",
+            desc: "Apply latest stash.",
+            scenario: "stash",
+            tags: ["stash", "pop"],
+          },
+          {
+            cmd: "git stash drop",
+            desc: "Delete latest stash.",
+            scenario: "stash",
+            tags: ["stash", "drop"],
+          },
+          {
+            cmd: "git revert HEAD",
+            desc: "Create inverse commit of last.",
+            scenario: "undo",
+            tags: ["revert"],
+          },
+          {
+            cmd: "git reset HEAD~1",
+            desc: "Undo commit but keep changes.",
+            scenario: "undo",
+            tags: ["reset", "mixed"],
+          },
+          {
+            cmd: "git reset --soft HEAD~1",
+            desc: "Undo commit but keep staged.",
+            scenario: "undo",
+            tags: ["reset", "soft"],
+          },
+          {
+            cmd: "git reset --hard HEAD~1",
+            desc: "Destroy last commit.",
+            scenario: "undo",
+            tags: ["reset", "hard", "danger"],
+          },
+          {
+            cmd: "git rm [file]",
+            desc: "Remove file and stage deletion.",
+            scenario: "undo",
+            tags: ["rm", "delete"],
+          },
+          {
+            cmd: "git mv [old] [new]",
+            desc: "Move or rename file.",
+            scenario: "undo",
+            tags: ["move", "rename"],
+          },
+          {
+            cmd: "git clean -fd",
+            desc: "Delete untracked files.",
+            scenario: "undo",
+            tags: ["clean", "danger"],
+          },
+          {
+            cmd: "git rebase -i HEAD~3",
+            desc: "Interactive rebase.",
+            scenario: "advanced",
+            tags: ["rebase", "interactive"],
+            hot: true,
+          },
+          {
+            cmd: "git rebase [branch]",
+            desc: "Move commits onto branch.",
+            scenario: "advanced",
+            tags: ["rebase"],
+          },
+          {
+            cmd: "git cherry-pick <commit>",
+            desc: "Apply specific commit.",
+            scenario: "advanced",
+            tags: ["cherry-pick"],
+          },
+          {
+            cmd: "git bisect start",
+            desc: "Begin binary search for bug.",
+            scenario: "advanced",
+            tags: ["bisect", "debug"],
+          },
+          {
+            cmd: "git submodule add <repo> <path>",
+            desc: "Add submodule.",
+            scenario: "advanced",
+            tags: ["submodule"],
+          },
+          {
+            cmd: "git submodule update --init --recursive",
+            desc: "Init + update submodules.",
+            scenario: "advanced",
+            tags: ["submodule", "update"],
+          },
+          {
+            cmd: "git tag -a v1.0.0 -m 'Version 1.0.0'",
+            desc: "Create annotated tag.",
+            scenario: "tags",
+            tags: ["tag"],
+          },
+          {
+            cmd: "git push origin v1.0.0",
+            desc: "Push single tag.",
+            scenario: "tags",
+            tags: ["tag", "push"],
+          },
+          {
+            cmd: "git push origin --tags",
+            desc: "Push all tags.",
+            scenario: "tags",
+            tags: ["tag", "push"],
+          },
+        ],
       },
-      flows: [
-        {
-          id: "git-feature-branch",
-          title: "Create feature branch → Commit → Push",
-          level: "feature dev",
-          steps: [
-            "git checkout -b feature/x",
-            "git status",
-            "git add .",
-            "git commit -m 'feat: implement x'",
-            "git push -u origin feature/x",
-          ],
-        },
-        {
-          id: "git-sync-main",
-          title: "Sync with main using rebase",
-          level: "sync",
-          steps: ["git fetch origin", "git rebase origin/main", "git push --force-with-lease"],
-        },
-      ],
-      commands: [
-        {
-          cmd: "git status -sb",
-          desc: "Compact status with branch info.",
-          scenario: "status",
-          tags: ["status", "branch"],
-          hot: true,
-        },
-        {
-          cmd: "git diff",
-          desc: "Show unstaged changes.",
-          scenario: "status",
-          tags: ["diff"],
-        },
-        {
-          cmd: "git add .",
-          desc: "Stage all modified files.",
-          scenario: "commit",
-          tags: ["stage"],
-        },
-        {
-          cmd: "git commit -m 'message'",
-          desc: "Commit staged changes with message.",
-          scenario: "commit",
-          tags: ["commit"],
-          hot: true,
-        },
-        {
-          cmd: "git commit --amend --no-edit",
-          desc: "Amend last commit without changing the message.",
-          scenario: "commit",
-          tags: ["amend"],
-        },
-        {
-          cmd: "git checkout -b feature/x",
-          desc: "Create and switch to new branch.",
-          scenario: "branch",
-          tags: ["branch", "create"],
-        },
-        {
-          cmd: "git switch main",
-          desc: "Switch to existing branch.",
-          scenario: "branch",
-          tags: ["switch"],
-        },
-        {
-          cmd: "git fetch origin",
-          desc: "Fetch remote updates.",
-          scenario: "sync",
-          tags: ["fetch"],
-        },
-        {
-          cmd: "git pull --rebase",
-          desc: "Pull and rebase instead of merge.",
-          scenario: "sync",
-          tags: ["pull", "rebase"],
-        },
-        {
-          cmd: "git push --force-with-lease",
-          desc: "Safe force push (won't overwrite others' work).",
-          scenario: "sync",
-          tags: ["push", "force"],
-        },
-        {
-          cmd: "git stash push -m 'wip'",
-          desc: "Stash current changes with a label.",
-          scenario: "stash",
-          tags: ["stash"],
-        },
-        {
-          cmd: "git stash list",
-          desc: "List all stashes.",
-          scenario: "stash",
-          tags: ["stash"],
-        },
-      ],
-    },
 
-    // ---------- HELM ----------
-    helm: {
-      label: "helm",
-      name: "Helm",
-      kind: "Package manager",
-      summary: "Chart lifecycle: search, lint, template, install, upgrade, rollback, and inspect values.",
-      badges: ["charts", "upgrade", "lint"],
-      scenarios: {
-        discover: "Search and inspect charts and releases.",
-        lint: "Validate chart correctness before deploy.",
-        render: "Render templates locally with values.",
-        release: "Install, upgrade, and rollback releases.",
+      // ---------- HELM ----------
+      helm: {
+        label: "helm",
+        name: "Helm",
+        kind: "Package manager",
+        summary:
+          "Chart lifecycle: search, lint, template, install, upgrade, rollback, and inspect values.",
+        badges: ["charts", "upgrade", "lint"],
+        scenarios: {
+          discover: "Search and inspect charts and releases.",
+          lint: "Validate chart correctness before deploy.",
+          render: "Render templates locally with values.",
+          release: "Install, upgrade, and rollback releases.",
+        },
+        flows: [
+          {
+            id: "helm-install-upgrade",
+            title: "Install → Upgrade → Rollback release",
+            level: "deploy",
+            steps: [
+              "helm repo add bitnami https://charts.bitnami.com/bitnami",
+              "helm repo update",
+              "helm install app bitnami/nginx -n app --create-namespace",
+              "helm upgrade app bitnami/nginx -n app",
+              "helm rollback app 1 -n app",
+            ],
+          },
+        ],
+        commands: [
+          {
+            cmd: "helm repo list",
+            desc: "List configured Helm repositories.",
+            scenario: "discover",
+            tags: ["repo"],
+          },
+          {
+            cmd: "helm repo add <name> <url>",
+            desc: "Add a new Helm repository.",
+            scenario: "discover",
+            tags: ["repo", "add"],
+          },
+          {
+            cmd: "helm search repo <pattern>",
+            desc: "Search for charts in added repositories.",
+            scenario: "discover",
+            tags: ["search", "charts"],
+          },
+          {
+            cmd: "helm list -A",
+            desc: "List all releases across namespaces.",
+            scenario: "discover",
+            tags: ["releases", "list"],
+          },
+          {
+            cmd: "helm lint ./chart",
+            desc: "Lint a local chart for common issues.",
+            scenario: "lint",
+            tags: ["lint"],
+          },
+          {
+            cmd: "helm template app ./chart -f values.yaml",
+            desc: "Render templates locally with values.",
+            scenario: "render",
+            tags: ["template", "render"],
+          },
+          {
+            cmd: "helm install app ./chart -n app --create-namespace",
+            desc: "Install chart as a release in namespace.",
+            scenario: "release",
+            tags: ["install", "release"],
+          },
+          {
+            cmd: "helm upgrade app ./chart -n app",
+            desc: "Upgrade existing release.",
+            scenario: "release",
+            tags: ["upgrade"],
+          },
+          {
+            cmd: "helm rollback app 1 -n app",
+            desc: "Rollback release to a previous revision.",
+            scenario: "release",
+            tags: ["rollback"],
+          },
+          {
+            cmd: "helm get values app -n app",
+            desc: "Show user-supplied values for a release.",
+            scenario: "discover",
+            tags: ["values"],
+          },
+        ],
       },
-      flows: [
-        {
-          id: "helm-install-upgrade",
-          title: "Install → Upgrade → Rollback release",
-          level: "deploy",
-          steps: [
-            "helm repo add bitnami https://charts.bitnami.com/bitnami",
-            "helm repo update",
-            "helm install app bitnami/nginx -n app --create-namespace",
-            "helm upgrade app bitnami/nginx -n app",
-            "helm rollback app 1 -n app",
-          ],
-        },
-      ],
-      commands: [
-        {
-          cmd: "helm repo list",
-          desc: "List configured Helm repositories.",
-          scenario: "discover",
-          tags: ["repo"],
-        },
-        {
-          cmd: "helm repo add <name> <url>",
-          desc: "Add a new Helm repository.",
-          scenario: "discover",
-          tags: ["repo", "add"],
-        },
-        {
-          cmd: "helm search repo <pattern>",
-          desc: "Search for charts in added repositories.",
-          scenario: "discover",
-          tags: ["search", "charts"],
-        },
-        {
-          cmd: "helm list -A",
-          desc: "List all releases across namespaces.",
-          scenario: "discover",
-          tags: ["releases", "list"],
-        },
-        {
-          cmd: "helm lint ./chart",
-          desc: "Lint a local chart for common issues.",
-          scenario: "lint",
-          tags: ["lint"],
-        },
-        {
-          cmd: "helm template app ./chart -f values.yaml",
-          desc: "Render templates locally with values.",
-          scenario: "render",
-          tags: ["template", "render"],
-        },
-        {
-          cmd: "helm install app ./chart -n app --create-namespace",
-          desc: "Install chart as a release in namespace.",
-          scenario: "release",
-          tags: ["install", "release"],
-        },
-        {
-          cmd: "helm upgrade app ./chart -n app",
-          desc: "Upgrade existing release.",
-          scenario: "release",
-          tags: ["upgrade"],
-        },
-        {
-          cmd: "helm rollback app 1 -n app",
-          desc: "Rollback release to a previous revision.",
-          scenario: "release",
-          tags: ["rollback"],
-        },
-        {
-          cmd: "helm get values app -n app",
-          desc: "Show user-supplied values for a release.",
-          scenario: "discover",
-          tags: ["values"],
-        },
-      ],
-    },
 
-    // ---------- JENKINS ----------
-    jenkins: {
-      label: "jenkins",
-      name: "Jenkins",
-      kind: "CI/CD",
-      summary: "Manage jobs, builds, logs, and agents via Jenkins CLI.",
-      badges: ["jobs", "builds", "agents"],
-      scenarios: {
-        jobs: "List, enable, disable, and trigger jobs.",
-        builds: "Inspect build status and logs.",
-        nodes: "Manage Jenkins agents/nodes.",
-        cli: "Use Jenkins CLI safely.",
+      // ---------- JENKINS ----------
+      jenkins: {
+        label: "jenkins",
+        name: "Jenkins",
+        kind: "CI/CD",
+        summary: "Manage jobs, builds, logs, and agents via Jenkins CLI.",
+        badges: ["jobs", "builds", "agents"],
+        scenarios: {
+          jobs: "List, enable, disable, and trigger jobs.",
+          builds: "Inspect build status and logs.",
+          nodes: "Manage Jenkins agents/nodes.",
+          cli: "Use Jenkins CLI safely.",
+        },
+        flows: [
+          {
+            id: "jenkins-trigger-job",
+            title: "List jobs → Trigger build → Watch status",
+            level: "pipeline",
+            steps: [
+              "java -jar jenkins-cli.jar -s <url> -auth <user:token> list-jobs",
+              "java -jar jenkins-cli.jar -s <url> -auth <user:token> build my-job",
+              "java -jar jenkins-cli.jar -s <url> -auth <user:token> console my-job",
+            ],
+          },
+        ],
+        commands: [
+          {
+            cmd: "java -jar jenkins-cli.jar -s <url> -auth <user:token> list-jobs",
+            desc: "List all Jenkins jobs.",
+            scenario: "jobs",
+            tags: ["jobs", "list"],
+          },
+          {
+            cmd: "java -jar jenkins-cli.jar -s <url> -auth <user:token> build my-job",
+            desc: "Trigger a build for a job.",
+            scenario: "jobs",
+            tags: ["build", "trigger"],
+          },
+          {
+            cmd: "java -jar jenkins-cli.jar -s <url> -auth <user:token> get-job my-job",
+            desc: "Get job configuration (XML).",
+            scenario: "jobs",
+            tags: ["config"],
+          },
+          {
+            cmd: "java -jar jenkins-cli.jar -s <url> -auth <user:token> disable-job my-job",
+            desc: "Disable a job.",
+            scenario: "jobs",
+            tags: ["disable"],
+          },
+          {
+            cmd: "java -jar jenkins-cli.jar -s <url> -auth <user:token> enable-job my-job",
+            desc: "Enable a job.",
+            scenario: "jobs",
+            tags: ["enable"],
+          },
+          {
+            cmd: "java -jar jenkins-cli.jar -s <url> -auth <user:token> list-builds my-job",
+            desc: "List builds for a job.",
+            scenario: "builds",
+            tags: ["builds"],
+          },
+          {
+            cmd: "java -jar jenkins-cli.jar -s <url> -auth <user:token> console my-job",
+            desc: "Stream console output for latest build.",
+            scenario: "builds",
+            tags: ["logs", "console"],
+          },
+          {
+            cmd: "java -jar jenkins-cli.jar -s <url> -auth <user:token> list-nodes",
+            desc: "List Jenkins nodes/agents.",
+            scenario: "nodes",
+            tags: ["nodes"],
+          },
+        ],
       },
-      flows: [
-        {
-          id: "jenkins-trigger-job",
-          title: "List jobs → Trigger build → Watch status",
-          level: "pipeline",
-          steps: [
-            "java -jar jenkins-cli.jar -s <url> -auth <user:token> list-jobs",
-            "java -jar jenkins-cli.jar -s <url> -auth <user:token> build my-job",
-            "java -jar jenkins-cli.jar -s <url> -auth <user:token> console my-job",
-          ],
-        },
-      ],
-      commands: [
-        {
-          cmd: "java -jar jenkins-cli.jar -s <url> -auth <user:token> list-jobs",
-          desc: "List all Jenkins jobs.",
-          scenario: "jobs",
-          tags: ["jobs", "list"],
-        },
-        {
-          cmd: "java -jar jenkins-cli.jar -s <url> -auth <user:token> build my-job",
-          desc: "Trigger a build for a job.",
-          scenario: "jobs",
-          tags: ["build", "trigger"],
-        },
-        {
-          cmd: "java -jar jenkins-cli.jar -s <url> -auth <user:token> get-job my-job",
-          desc: "Get job configuration (XML).",
-          scenario: "jobs",
-          tags: ["config"],
-        },
-        {
-          cmd: "java -jar jenkins-cli.jar -s <url> -auth <user:token> disable-job my-job",
-          desc: "Disable a job.",
-          scenario: "jobs",
-          tags: ["disable"],
-        },
-        {
-          cmd: "java -jar jenkins-cli.jar -s <url> -auth <user:token> enable-job my-job",
-          desc: "Enable a job.",
-          scenario: "jobs",
-          tags: ["enable"],
-        },
-        {
-          cmd: "java -jar jenkins-cli.jar -s <url> -auth <user:token> list-builds my-job",
-          desc: "List builds for a job.",
-          scenario: "builds",
-          tags: ["builds"],
-        },
-        {
-          cmd: "java -jar jenkins-cli.jar -s <url> -auth <user:token> console my-job",
-          desc: "Stream console output for latest build.",
-          scenario: "builds",
-          tags: ["logs", "console"],
-        },
-        {
-          cmd: "java -jar jenkins-cli.jar -s <url> -auth <user:token> list-nodes",
-          desc: "List Jenkins nodes/agents.",
-          scenario: "nodes",
-          tags: ["nodes"],
-        },
-      ],
-    },
 
-    // ---------- GITHUB ACTIONS ----------
-    github_actions: {
-      label: "gha",
-      name: "GitHub Actions",
-      kind: "CI/CD",
-      summary: "Workflow inspection: runs, logs, re-runs, artifacts via gh CLI.",
-      badges: ["gh cli", "workflows", "logs"],
-      scenarios: {
-        workflows: "List workflows and enable/disable.",
-        runs: "Inspect and re-run workflow runs.",
-        logs: "Fetch job and step logs.",
-        artifacts: "List and download artifacts.",
+      // ---------- GITHUB ACTIONS ----------
+      github_actions: {
+        label: "gha",
+        name: "GitHub Actions",
+        kind: "CI/CD",
+        summary:
+          "Workflow inspection: runs, logs, re-runs, artifacts via gh CLI.",
+        badges: ["gh cli", "workflows", "logs"],
+        scenarios: {
+          workflows: "List workflows and enable/disable.",
+          runs: "Inspect and re-run workflow runs.",
+          logs: "Fetch job and step logs.",
+          artifacts: "List and download artifacts.",
+        },
+        flows: [
+          {
+            id: "gha-debug-run",
+            title: "List runs → Inspect → View logs",
+            level: "pipeline",
+            steps: [
+              "gh workflow list",
+              "gh run list",
+              "gh run view <run-id>",
+              "gh run view <run-id> --log",
+            ],
+          },
+        ],
+        commands: [
+          {
+            cmd: "gh workflow list",
+            desc: "List workflows in the repo.",
+            scenario: "workflows",
+            tags: ["workflow", "list"],
+          },
+          {
+            cmd: "gh workflow view <name>.yml",
+            desc: "View workflow definition.",
+            scenario: "workflows",
+            tags: ["view"],
+          },
+          {
+            cmd: "gh run list",
+            desc: "List recent workflow runs.",
+            scenario: "runs",
+            tags: ["runs", "list"],
+          },
+          {
+            cmd: "gh run view <run-id>",
+            desc: "View details for a run.",
+            scenario: "runs",
+            tags: ["run", "details"],
+          },
+          {
+            cmd: "gh run view <run-id> --log",
+            desc: "Show logs for the run.",
+            scenario: "logs",
+            tags: ["logs"],
+          },
+          {
+            cmd: "gh run rerun <run-id>",
+            desc: "Re-run a failed run.",
+            scenario: "runs",
+            tags: ["rerun"],
+          },
+          {
+            cmd: "gh run list --workflow <name>.yml",
+            desc: "List runs for specific workflow.",
+            scenario: "runs",
+            tags: ["workflow"],
+          },
+          {
+            cmd: "gh run view <run-id> --jobs",
+            desc: "Show jobs and steps for the run.",
+            scenario: "logs",
+            tags: ["jobs", "steps"],
+          },
+        ],
       },
-      flows: [
-        {
-          id: "gha-debug-run",
-          title: "List runs → Inspect → View logs",
-          level: "pipeline",
-          steps: [
-            "gh workflow list",
-            "gh run list",
-            "gh run view <run-id>",
-            "gh run view <run-id> --log",
-          ],
-        },
-      ],
-      commands: [
-        {
-          cmd: "gh workflow list",
-          desc: "List workflows in the repo.",
-          scenario: "workflows",
-          tags: ["workflow", "list"],
-        },
-        {
-          cmd: "gh workflow view <name>.yml",
-          desc: "View workflow definition.",
-          scenario: "workflows",
-          tags: ["view"],
-        },
-        {
-          cmd: "gh run list",
-          desc: "List recent workflow runs.",
-          scenario: "runs",
-          tags: ["runs", "list"],
-        },
-        {
-          cmd: "gh run view <run-id>",
-          desc: "View details for a run.",
-          scenario: "runs",
-          tags: ["run", "details"],
-        },
-        {
-          cmd: "gh run view <run-id> --log",
-          desc: "Show logs for the run.",
-          scenario: "logs",
-          tags: ["logs"],
-        },
-        {
-          cmd: "gh run rerun <run-id>",
-          desc: "Re-run a failed run.",
-          scenario: "runs",
-          tags: ["rerun"],
-        },
-        {
-          cmd: "gh run list --workflow <name>.yml",
-          desc: "List runs for specific workflow.",
-          scenario: "runs",
-          tags: ["workflow"],
-        },
-        {
-          cmd: "gh run view <run-id> --jobs",
-          desc: "Show jobs and steps for the run.",
-          scenario: "logs",
-          tags: ["jobs", "steps"],
-        },
-      ],
-    },
 
-    // ---------- GITLAB CI ----------
-    gitlab_ci: {
-      label: "glci",
-      name: "GitLab CI",
-      kind: "CI/CD",
-      summary: "Pipelines, jobs, and artifacts via GitLab CLI/API.",
-      badges: ["pipelines", "jobs"],
-      scenarios: {
-        pipelines: "List and inspect pipelines.",
-        jobs: "Inspect CI jobs and logs.",
-        artifacts: "Download build artifacts.",
+      // ---------- GITLAB CI ----------
+      gitlab_ci: {
+        label: "glci",
+        name: "GitLab CI",
+        kind: "CI/CD",
+        summary: "Pipelines, jobs, and artifacts via GitLab CLI/API.",
+        badges: ["pipelines", "jobs"],
+        scenarios: {
+          pipelines: "List and inspect pipelines.",
+          jobs: "Inspect CI jobs and logs.",
+          artifacts: "Download build artifacts.",
+        },
+        flows: [
+          {
+            id: "gitlab-pipeline-debug",
+            title: "List pipelines → Inspect → Check jobs",
+            level: "pipeline",
+            steps: [
+              "glab ci view",
+              "glab ci status",
+              "glab ci trace <job-id>",
+            ],
+          },
+        ],
+        commands: [
+          {
+            cmd: "glab ci view",
+            desc: "View latest pipelines.",
+            scenario: "pipelines",
+            tags: ["pipelines"],
+          },
+          {
+            cmd: "glab ci status",
+            desc: "Show status for latest pipeline.",
+            scenario: "pipelines",
+            tags: ["status"],
+          },
+          {
+            cmd: "glab ci trace <job-id>",
+            desc: "Stream logs for a job.",
+            scenario: "jobs",
+            tags: ["logs", "trace"],
+          },
+          {
+            cmd: "glab ci artifacts <job-id>",
+            desc: "Download artifacts for a job.",
+            scenario: "artifacts",
+            tags: ["artifacts"],
+          },
+        ],
       },
-      flows: [
-        {
-          id: "gitlab-pipeline-debug",
-          title: "List pipelines → Inspect → Check jobs",
-          level: "pipeline",
-          steps: [
-            "glab ci view",
-            "glab ci status",
-            "glab ci trace <job-id>",
-          ],
-        },
-      ],
-      commands: [
-        {
-          cmd: "glab ci view",
-          desc: "View latest pipelines.",
-          scenario: "pipelines",
-          tags: ["pipelines"],
-        },
-        {
-          cmd: "glab ci status",
-          desc: "Show status for latest pipeline.",
-          scenario: "pipelines",
-          tags: ["status"],
-        },
-        {
-          cmd: "glab ci trace <job-id>",
-          desc: "Stream logs for a job.",
-          scenario: "jobs",
-          tags: ["logs", "trace"],
-        },
-        {
-          cmd: "glab ci artifacts <job-id>",
-          desc: "Download artifacts for a job.",
-          scenario: "artifacts",
-          tags: ["artifacts"],
-        },
-      ],
-    },
 
-    // ---------- TERRAFORM ----------
-    terraform: {
-      label: "tf",
-      name: "Terraform",
-      kind: "IaC",
-      summary: "Init, validate, plan, apply, destroy, and state operations for IaC workflows.",
-      badges: ["plan/apply", "state", "workspaces"],
-      scenarios: {
-        init: "Initialize provider plugins and backend.",
-        plan: "Show changes before applying.",
-        apply: "Apply planned infrastructure changes.",
-        destroy: "Tear down infrastructure.",
-        state: "Inspect and manipulate Terraform state.",
+      // ---------- TERRAFORM ----------
+      terraform: {
+        label: "tf",
+        name: "Terraform",
+        kind: "IaC",
+        summary:
+          "Init, validate, plan, apply, destroy, and state operations for IaC workflows.",
+        badges: ["plan/apply", "state", "workspaces"],
+        scenarios: {
+          init: "Initialize provider plugins and backend.",
+          plan: "Show changes before applying.",
+          apply: "Apply planned infrastructure changes.",
+          destroy: "Tear down infrastructure.",
+          state: "Inspect and manipulate Terraform state.",
+        },
+        flows: [
+          {
+            id: "tf-plan-apply",
+            title: "Init → Plan → Apply",
+            level: "iac",
+            steps: [
+              "terraform init",
+              "terraform fmt",
+              "terraform validate",
+              "terraform plan -out=tfplan",
+              "terraform apply tfplan",
+            ],
+          },
+        ],
+        commands: [
+          {
+            cmd: "terraform init",
+            desc: "Initialize Terraform working directory.",
+            scenario: "init",
+            tags: ["init"],
+            hot: true,
+          },
+          {
+            cmd: "terraform fmt",
+            desc: "Format Terraform files.",
+            scenario: "init",
+            tags: ["fmt"],
+          },
+          {
+            cmd: "terraform validate",
+            desc: "Validate configuration syntax and internal consistency.",
+            scenario: "init",
+            tags: ["validate"],
+          },
+          {
+            cmd: "terraform plan",
+            desc: "Show execution plan.",
+            scenario: "plan",
+            tags: ["plan"],
+            hot: true,
+          },
+          {
+            cmd: "terraform plan -out=tfplan",
+            desc: "Save plan to file for later apply.",
+            scenario: "plan",
+            tags: ["plan", "out"],
+          },
+          {
+            cmd: "terraform apply",
+            desc: "Apply changes without pre-saved plan.",
+            scenario: "apply",
+            tags: ["apply"],
+          },
+          {
+            cmd: "terraform apply tfplan",
+            desc: "Apply a previously saved plan.",
+            scenario: "apply",
+            tags: ["apply", "tfplan"],
+          },
+          {
+            cmd: "terraform destroy",
+            desc: "Destroy managed infrastructure.",
+            scenario: "destroy",
+            tags: ["destroy"],
+          },
+          {
+            cmd: "terraform state list",
+            desc: "List resources in state.",
+            scenario: "state",
+            tags: ["state"],
+          },
+          {
+            cmd: "terraform show",
+            desc: "Show current state or plan.",
+            scenario: "state",
+            tags: ["show"],
+          },
+        ],
       },
-      flows: [
-        {
-          id: "tf-plan-apply",
-          title: "Init → Plan → Apply",
-          level: "iac",
-          steps: [
-            "terraform init",
-            "terraform fmt",
-            "terraform validate",
-            "terraform plan -out=tfplan",
-            "terraform apply tfplan",
-          ],
-        },
-      ],
-      commands: [
-        {
-          cmd: "terraform init",
-          desc: "Initialize Terraform working directory.",
-          scenario: "init",
-          tags: ["init"],
-          hot: true,
-        },
-        {
-          cmd: "terraform fmt",
-          desc: "Format Terraform files.",
-          scenario: "init",
-          tags: ["fmt"],
-        },
-        {
-          cmd: "terraform validate",
-          desc: "Validate configuration syntax and internal consistency.",
-          scenario: "init",
-          tags: ["validate"],
-        },
-        {
-          cmd: "terraform plan",
-          desc: "Show execution plan.",
-          scenario: "plan",
-          tags: ["plan"],
-          hot: true,
-        },
-        {
-          cmd: "terraform plan -out=tfplan",
-          desc: "Save plan to file for later apply.",
-          scenario: "plan",
-          tags: ["plan", "out"],
-        },
-        {
-          cmd: "terraform apply",
-          desc: "Apply changes without pre-saved plan.",
-          scenario: "apply",
-          tags: ["apply"],
-        },
-        {
-          cmd: "terraform apply tfplan",
-          desc: "Apply a previously saved plan.",
-          scenario: "apply",
-          tags: ["apply", "tfplan"],
-        },
-        {
-          cmd: "terraform destroy",
-          desc: "Destroy managed infrastructure.",
-          scenario: "destroy",
-          tags: ["destroy"],
-        },
-        {
-          cmd: "terraform state list",
-          desc: "List resources in state.",
-          scenario: "state",
-          tags: ["state"],
-        },
-        {
-          cmd: "terraform show",
-          desc: "Show current state or plan.",
-          scenario: "state",
-          tags: ["show"],
-        },
-      ],
-    },
 
-    // ---------- ANSIBLE ----------
-    ansible: {
-      label: "ansible",
-      name: "Ansible",
-      kind: "Config mgmt",
-      summary: "Ad-hoc commands, playbooks, inventories, and config inspection.",
-      badges: ["playbooks", "adhoc", "inventory"],
-      scenarios: {
-        adhoc: "Run one-off commands over SSH.",
-        playbook: "Run idempotent playbooks.",
-        inventory: "Inspect hosts and groups.",
+      // ---------- ANSIBLE ----------
+      ansible: {
+        label: "ansible",
+        name: "Ansible",
+        kind: "Config mgmt",
+        summary:
+          "Ad-hoc commands, playbooks, inventories, and config inspection.",
+        badges: ["playbooks", "adhoc", "inventory"],
+        scenarios: {
+          adhoc: "Run one-off commands over SSH.",
+          playbook: "Run idempotent playbooks.",
+          inventory: "Inspect hosts and groups.",
+        },
+        flows: [
+          {
+            id: "ansible-run-playbook",
+            title: "Ping hosts → Run playbook",
+            level: "config",
+            steps: [
+              "ansible all -i inventory.ini -m ping",
+              "ansible-playbook -i inventory.ini site.yml",
+            ],
+          },
+        ],
+        commands: [
+          {
+            cmd: "ansible all -i inventory.ini -m ping",
+            desc: "Ping all hosts in inventory.",
+            scenario: "adhoc",
+            tags: ["ping", "health"],
+          },
+          {
+            cmd: "ansible web -i inventory.ini -m shell -a 'uptime'",
+            desc: "Run adhoc shell command on web group.",
+            scenario: "adhoc",
+            tags: ["shell", "uptime"],
+          },
+          {
+            cmd: "ansible-inventory -i inventory.ini --list",
+            desc: "Show full inventory as JSON.",
+            scenario: "inventory",
+            tags: ["inventory"],
+          },
+          {
+            cmd: "ansible-inventory -i inventory.ini --graph",
+            desc: "Graph inventory layout.",
+            scenario: "inventory",
+            tags: ["inventory", "graph"],
+          },
+          {
+            cmd: "ansible-playbook -i inventory.ini site.yml",
+            desc: "Run main playbook.",
+            scenario: "playbook",
+            tags: ["playbook"],
+            hot: true,
+          },
+          {
+            cmd: "ansible-playbook -i inventory.ini site.yml --check",
+            desc: "Run playbook in check (dry-run) mode.",
+            scenario: "playbook",
+            tags: ["check", "dry-run"],
+          },
+        ],
       },
-      flows: [
-        {
-          id: "ansible-run-playbook",
-          title: "Ping hosts → Run playbook",
-          level: "config",
-          steps: [
-            "ansible all -i inventory.ini -m ping",
-            "ansible-playbook -i inventory.ini site.yml",
-          ],
-        },
-      ],
-      commands: [
-        {
-          cmd: "ansible all -i inventory.ini -m ping",
-          desc: "Ping all hosts in inventory.",
-          scenario: "adhoc",
-          tags: ["ping", "health"],
-        },
-        {
-          cmd: "ansible web -i inventory.ini -m shell -a 'uptime'",
-          desc: "Run adhoc shell command on web group.",
-          scenario: "adhoc",
-          tags: ["shell", "uptime"],
-        },
-        {
-          cmd: "ansible-inventory -i inventory.ini --list",
-          desc: "Show full inventory as JSON.",
-          scenario: "inventory",
-          tags: ["inventory"],
-        },
-        {
-          cmd: "ansible-inventory -i inventory.ini --graph",
-          desc: "Graph inventory layout.",
-          scenario: "inventory",
-          tags: ["inventory", "graph"],
-        },
-        {
-          cmd: "ansible-playbook -i inventory.ini site.yml",
-          desc: "Run main playbook.",
-          scenario: "playbook",
-          tags: ["playbook"],
-          hot: true,
-        },
-        {
-          cmd: "ansible-playbook -i inventory.ini site.yml --check",
-          desc: "Run playbook in check (dry-run) mode.",
-          scenario: "playbook",
-          tags: ["check", "dry-run"],
-        },
-      ],
-    },
 
-    // ---------- AWS CLI ----------
-    aws: {
-      label: "aws",
-      name: "AWS CLI",
-      kind: "Cloud",
-      summary: "Core EC2, S3, IAM, STS, and CloudWatch logs operations via AWS CLI v2.",
-      badges: ["ec2", "s3", "iam", "logs"],
-      scenarios: {
-        s3: "List, sync, and manage S3 buckets.",
-        ec2: "List and manage EC2 instances.",
-        iam: "Inspect IAM users and roles.",
-        sts: "Check credentials and caller identity.",
+      // ---------- AWS CLI ----------
+      aws: {
+        label: "aws",
+        name: "AWS CLI",
+        kind: "Cloud",
+        summary:
+          "Core EC2, S3, IAM, STS, and CloudWatch logs operations via AWS CLI v2.",
+        badges: ["ec2", "s3", "iam", "logs"],
+        scenarios: {
+          s3: "List, sync, and manage S3 buckets.",
+          ec2: "List and manage EC2 instances.",
+          iam: "Inspect IAM users and roles.",
+          sts: "Check credentials and caller identity.",
+        },
+        flows: [
+          {
+            id: "aws-s3-sync",
+            title: "List bucket → Sync local folder",
+            level: "storage",
+            steps: [
+              "aws s3 ls",
+              "aws s3 ls s3://my-bucket",
+              "aws s3 sync ./build s3://my-bucket/build",
+            ],
+          },
+        ],
+        commands: [
+          {
+            cmd: "aws configure",
+            desc: "Interactive AWS CLI configuration.",
+            scenario: "sts",
+            tags: ["configure"],
+          },
+          {
+            cmd: "aws sts get-caller-identity",
+            desc: "Show current identity (account, user/role).",
+            scenario: "sts",
+            tags: ["sts", "whoami"],
+          },
+          {
+            cmd: "aws s3 ls",
+            desc: "List all buckets.",
+            scenario: "s3",
+            tags: ["s3", "ls"],
+          },
+          {
+            cmd: "aws s3 ls s3://my-bucket",
+            desc: "List objects in bucket.",
+            scenario: "s3",
+            tags: ["objects"],
+          },
+          {
+            cmd: "aws s3 sync ./build s3://my-bucket/build",
+            desc: "Sync local folder to S3 prefix.",
+            scenario: "s3",
+            tags: ["sync", "deploy"],
+          },
+          {
+            cmd: "aws ec2 describe-instances --query 'Reservations[].Instances[].InstanceId'",
+            desc: "List EC2 instance IDs.",
+            scenario: "ec2",
+            tags: ["ec2", "instances"],
+          },
+          {
+            cmd: "aws ec2 stop-instances --instance-ids <id>",
+            desc: "Stop instance.",
+            scenario: "ec2",
+            tags: ["stop"],
+          },
+          {
+            cmd: "aws ec2 start-instances --instance-ids <id>",
+            desc: "Start instance.",
+            scenario: "ec2",
+            tags: ["start"],
+          },
+          {
+            cmd: "aws iam list-users",
+            desc: "List IAM users.",
+            scenario: "iam",
+            tags: ["iam", "users"],
+          },
+        ],
       },
-      flows: [
-        {
-          id: "aws-s3-sync",
-          title: "List bucket → Sync local folder",
-          level: "storage",
-          steps: [
-            "aws s3 ls",
-            "aws s3 ls s3://my-bucket",
-            "aws s3 sync ./build s3://my-bucket/build",
-          ],
-        },
-      ],
-      commands: [
-        {
-          cmd: "aws configure",
-          desc: "Interactive AWS CLI configuration.",
-          scenario: "sts",
-          tags: ["configure"],
-        },
-        {
-          cmd: "aws sts get-caller-identity",
-          desc: "Show current identity (account, user/role).",
-          scenario: "sts",
-          tags: ["sts", "whoami"],
-        },
-        {
-          cmd: "aws s3 ls",
-          desc: "List all buckets.",
-          scenario: "s3",
-          tags: ["s3", "ls"],
-        },
-        {
-          cmd: "aws s3 ls s3://my-bucket",
-          desc: "List objects in bucket.",
-          scenario: "s3",
-          tags: ["objects"],
-        },
-        {
-          cmd: "aws s3 sync ./build s3://my-bucket/build",
-          desc: "Sync local folder to S3 prefix.",
-          scenario: "s3",
-          tags: ["sync", "deploy"],
-        },
-        {
-          cmd: "aws ec2 describe-instances --query 'Reservations[].Instances[].InstanceId'",
-          desc: "List EC2 instance IDs.",
-          scenario: "ec2",
-          tags: ["ec2", "instances"],
-        },
-        {
-          cmd: "aws ec2 stop-instances --instance-ids <id>",
-          desc: "Stop instance.",
-          scenario: "ec2",
-          tags: ["stop"],
-        },
-        {
-          cmd: "aws ec2 start-instances --instance-ids <id>",
-          desc: "Start instance.",
-          scenario: "ec2",
-          tags: ["start"],
-        },
-        {
-          cmd: "aws iam list-users",
-          desc: "List IAM users.",
-          scenario: "iam",
-          tags: ["iam", "users"],
-        },
-      ],
-    },
 
-    // ---------- AZURE CLI ----------
-    azure: {
-      label: "az",
-      name: "Azure CLI",
-      kind: "Cloud",
-      summary: "Daily vm, storage, group and identity operations using az CLI.",
-      badges: ["vm", "storage", "rg"],
-      scenarios: {
-        login: "Authenticate and set subscription.",
-        vm: "List, start, and stop VMs.",
-        group: "Manage resource groups.",
-        storage: "List storage accounts and blobs.",
+      // ---------- AZURE CLI ----------
+      azure: {
+        label: "az",
+        name: "Azure CLI",
+        kind: "Cloud",
+        summary:
+          "Daily vm, storage, group and identity operations using az CLI.",
+        badges: ["vm", "storage", "rg"],
+        scenarios: {
+          login: "Authenticate and set subscription.",
+          vm: "List, start, and stop VMs.",
+          group: "Manage resource groups.",
+          storage: "List storage accounts and blobs.",
+        },
+        flows: [
+          {
+            id: "az-vm-start-stop",
+            title: "Login → List VMs → Start/Stop",
+            level: "compute",
+            steps: [
+              "az login",
+              "az account set --subscription <name-or-id>",
+              "az vm list -o table",
+              "az vm stop -g <group> -n <vm-name>",
+              "az vm start -g <group> -n <vm-name>",
+            ],
+          },
+        ],
+        commands: [
+          {
+            cmd: "az login",
+            desc: "Log in to Azure.",
+            scenario: "login",
+            tags: ["login"],
+          },
+          {
+            cmd: "az account list -o table",
+            desc: "List subscriptions.",
+            scenario: "login",
+            tags: ["subscription"],
+          },
+          {
+            cmd: "az account set --subscription <name-or-id>",
+            desc: "Set active subscription.",
+            scenario: "login",
+            tags: ["subscription"],
+          },
+          {
+            cmd: "az group list -o table",
+            desc: "List resource groups.",
+            scenario: "group",
+            tags: ["rg"],
+          },
+          {
+            cmd: "az vm list -o table",
+            desc: "List virtual machines.",
+            scenario: "vm",
+            tags: ["vm", "list"],
+          },
+          {
+            cmd: "az vm stop -g <group> -n <vm-name>",
+            desc: "Stop VM.",
+            scenario: "vm",
+            tags: ["stop"],
+          },
+          {
+            cmd: "az vm start -g <group> -n <vm-name>",
+            desc: "Start VM.",
+            scenario: "vm",
+            tags: ["start"],
+          },
+        ],
       },
-      flows: [
-        {
-          id: "az-vm-start-stop",
-          title: "Login → List VMs → Start/Stop",
-          level: "compute",
-          steps: [
-            "az login",
-            "az account set --subscription <name-or-id>",
-            "az vm list -o table",
-            "az vm stop -g <group> -n <vm-name>",
-            "az vm start -g <group> -n <vm-name>",
-          ],
-        },
-      ],
-      commands: [
-        {
-          cmd: "az login",
-          desc: "Log in to Azure.",
-          scenario: "login",
-          tags: ["login"],
-        },
-        {
-          cmd: "az account list -o table",
-          desc: "List subscriptions.",
-          scenario: "login",
-          tags: ["subscription"],
-        },
-        {
-          cmd: "az account set --subscription <name-or-id>",
-          desc: "Set active subscription.",
-          scenario: "login",
-          tags: ["subscription"],
-        },
-        {
-          cmd: "az group list -o table",
-          desc: "List resource groups.",
-          scenario: "group",
-          tags: ["rg"],
-        },
-        {
-          cmd: "az vm list -o table",
-          desc: "List virtual machines.",
-          scenario: "vm",
-          tags: ["vm", "list"],
-        },
-        {
-          cmd: "az vm stop -g <group> -n <vm-name>",
-          desc: "Stop VM.",
-          scenario: "vm",
-          tags: ["stop"],
-        },
-        {
-          cmd: "az vm start -g <group> -n <vm-name>",
-          desc: "Start VM.",
-          scenario: "vm",
-          tags: ["start"],
-        },
-      ],
-    },
 
-    // ---------- GCLOUD ----------
-    gcloud: {
-      label: "gcloud",
-      name: "gcloud",
-      kind: "Cloud",
-      summary: "Core GCP commands for projects, compute, and storage.",
-      badges: ["compute", "storage", "project"],
-      scenarios: {
-        project: "Set and verify active project.",
-        compute: "List and manage instances.",
-        storage: "List buckets and objects.",
+      // ---------- GCLOUD ----------
+      gcloud: {
+        label: "gcloud",
+        name: "gcloud",
+        kind: "Cloud",
+        summary: "Core GCP commands for projects, compute, and storage.",
+        badges: ["compute", "storage", "project"],
+        scenarios: {
+          project: "Set and verify active project.",
+          compute: "List and manage instances.",
+          storage: "List buckets and objects.",
+        },
+        flows: [
+          {
+            id: "gcloud-compute-basic",
+            title: "Set project → List instances → SSH",
+            level: "compute",
+            steps: [
+              "gcloud config set project <project-id>",
+              "gcloud compute instances list",
+              "gcloud compute ssh <instance-name> --zone=<zone>",
+            ],
+          },
+        ],
+        commands: [
+          {
+            cmd: "gcloud config list",
+            desc: "Show current configuration.",
+            scenario: "project",
+            tags: ["config"],
+          },
+          {
+            cmd: "gcloud config set project <project-id>",
+            desc: "Set active project.",
+            scenario: "project",
+            tags: ["project"],
+          },
+          {
+            cmd: "gcloud projects list",
+            desc: "List accessible projects.",
+            scenario: "project",
+            tags: ["projects"],
+          },
+          {
+            cmd: "gcloud compute instances list",
+            desc: "List compute instances.",
+            scenario: "compute",
+            tags: ["instances"],
+          },
+          {
+            cmd: "gcloud compute ssh <instance-name> --zone=<zone>",
+            desc: "SSH into instance.",
+            scenario: "compute",
+            tags: ["ssh"],
+          },
+          {
+            cmd: "gcloud storage buckets list",
+            desc: "List storage buckets.",
+            scenario: "storage",
+            tags: ["buckets"],
+          },
+          {
+            cmd: "gcloud storage ls gs://my-bucket",
+            desc: "List objects in bucket.",
+            scenario: "storage",
+            tags: ["objects"],
+          },
+        ],
       },
-      flows: [
-        {
-          id: "gcloud-compute-basic",
-          title: "Set project → List instances → SSH",
-          level: "compute",
-          steps: [
-            "gcloud config set project <project-id>",
-            "gcloud compute instances list",
-            "gcloud compute ssh <instance-name> --zone=<zone>",
-          ],
-        },
-      ],
-      commands: [
-        {
-          cmd: "gcloud config list",
-          desc: "Show current configuration.",
-          scenario: "project",
-          tags: ["config"],
-        },
-        {
-          cmd: "gcloud config set project <project-id>",
-          desc: "Set active project.",
-          scenario: "project",
-          tags: ["project"],
-        },
-        {
-          cmd: "gcloud projects list",
-          desc: "List accessible projects.",
-          scenario: "project",
-          tags: ["projects"],
-        },
-        {
-          cmd: "gcloud compute instances list",
-          desc: "List compute instances.",
-          scenario: "compute",
-          tags: ["instances"],
-        },
-        {
-          cmd: "gcloud compute ssh <instance-name> --zone=<zone>",
-          desc: "SSH into instance.",
-          scenario: "compute",
-          tags: ["ssh"],
-        },
-        {
-          cmd: "gcloud storage buckets list",
-          desc: "List storage buckets.",
-          scenario: "storage",
-          tags: ["buckets"],
-        },
-        {
-          cmd: "gcloud storage ls gs://my-bucket",
-          desc: "List objects in bucket.",
-          scenario: "storage",
-          tags: ["objects"],
-        },
-      ],
-    },
 
-    // ---------- PROMETHEUS ----------
-    prometheus: {
-      label: "prom",
-      name: "Prometheus",
-      kind: "Monitoring",
-      summary: "PromQL querying for metrics, debug targets and rules.",
-      badges: ["PromQL", "targets", "rules"],
-      scenarios: {
-        query: "Run quick PromQL queries.",
-        targets: "Inspect scrape targets and health.",
-        rules: "List alerting and recording rules.",
+      // ---------- PROMETHEUS ----------
+      prometheus: {
+        label: "prom",
+        name: "Prometheus",
+        kind: "Monitoring",
+        summary: "PromQL querying for metrics, debug targets and rules.",
+        badges: ["PromQL", "targets", "rules"],
+        scenarios: {
+          query: "Run quick PromQL queries.",
+          targets: "Inspect scrape targets and health.",
+          rules: "List alerting and recording rules.",
+        },
+        flows: [
+          {
+            id: "prom-query-latency",
+            title: "Check HTTP latency and error rate",
+            level: "monitoring",
+            steps: [
+              "rate(http_requests_total[5m])",
+              "histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le))",
+            ],
+          },
+        ],
+        commands: [
+          {
+            cmd: "up",
+            desc: "Basic check: which targets are up.",
+            scenario: "targets",
+            tags: ["up"],
+          },
+          {
+            cmd: "rate(http_requests_total[5m])",
+            desc: "Requests per second over 5m window.",
+            scenario: "query",
+            tags: ["http", "rate"],
+          },
+          {
+            cmd: "histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le))",
+            desc: "95th percentile latency from histogram.",
+            scenario: "query",
+            tags: ["latency", "p95"],
+          },
+          {
+            cmd: "ALERTS",
+            desc: "Show firing and pending alerts.",
+            scenario: "rules",
+            tags: ["alerts"],
+          },
+        ],
       },
-      flows: [
-        {
-          id: "prom-query-latency",
-          title: "Check HTTP latency and error rate",
-          level: "monitoring",
-          steps: [
-            "rate(http_requests_total[5m])",
-            "histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le))",
-          ],
-        },
-      ],
-      commands: [
-        {
-          cmd: "up",
-          desc: "Basic check: which targets are up.",
-          scenario: "targets",
-          tags: ["up"],
-        },
-        {
-          cmd: "rate(http_requests_total[5m])",
-          desc: "Requests per second over 5m window.",
-          scenario: "query",
-          tags: ["http", "rate"],
-        },
-        {
-          cmd: "histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le))",
-          desc: "95th percentile latency from histogram.",
-          scenario: "query",
-          tags: ["latency", "p95"],
-        },
-        {
-          cmd: "ALERTS",
-          desc: "Show firing and pending alerts.",
-          scenario: "rules",
-          tags: ["alerts"],
-        },
-      ],
-    },
 
-    // ---------- GRAFANA ----------
-    grafana: {
-      label: "grafana",
-      name: "Grafana",
-      kind: "Dashboards",
-      summary: "Dashboards and data sources management via grafana-cli and HTTP API.",
-      badges: ["dashboards", "datasources"],
-      scenarios: {
-        plugins: "Install and update plugins.",
-        dashboards: "Export and import dashboards.",
+      // ---------- GRAFANA ----------
+      grafana: {
+        label: "grafana",
+        name: "Grafana",
+        kind: "Dashboards",
+        summary:
+          "Dashboards and data sources management via grafana-cli and HTTP API.",
+        badges: ["dashboards", "datasources"],
+        scenarios: {
+          plugins: "Install and update plugins.",
+          dashboards: "Export and import dashboards.",
+        },
+        flows: [
+          {
+            id: "grafana-export-dashboard",
+            title: "Export → Import dashboard via API",
+            level: "dashboards",
+            steps: [
+              "curl -H 'Authorization: Bearer <token>' https://<host>/api/dashboards/uid/<uid>",
+              "curl -X POST -H 'Authorization: Bearer <token>' -H 'Content-Type: application/json' -d @dashboard.json https://<host>/api/dashboards/db",
+            ],
+          },
+        ],
+        commands: [
+          {
+            cmd: "grafana-cli plugins list-remote",
+            desc: "List available plugins.",
+            scenario: "plugins",
+            tags: ["plugins"],
+          },
+          {
+            cmd: "grafana-cli plugins install <plugin-id>",
+            desc: "Install plugin.",
+            scenario: "plugins",
+            tags: ["install"],
+          },
+          {
+            cmd: "grafana-cli plugins update-all",
+            desc: "Update all plugins.",
+            scenario: "plugins",
+            tags: ["update"],
+          },
+        ],
       },
-      flows: [
-        {
-          id: "grafana-export-dashboard",
-          title: "Export → Import dashboard via API",
-          level: "dashboards",
-          steps: [
-            "curl -H 'Authorization: Bearer <token>' https://<host>/api/dashboards/uid/<uid>",
-            "curl -X POST -H 'Authorization: Bearer <token>' -H 'Content-Type: application/json' -d @dashboard.json https://<host>/api/dashboards/db",
-          ],
-        },
-      ],
-      commands: [
-        {
-          cmd: "grafana-cli plugins list-remote",
-          desc: "List available plugins.",
-          scenario: "plugins",
-          tags: ["plugins"],
-        },
-        {
-          cmd: "grafana-cli plugins install <plugin-id>",
-          desc: "Install plugin.",
-          scenario: "plugins",
-          tags: ["install"],
-        },
-        {
-          cmd: "grafana-cli plugins update-all",
-          desc: "Update all plugins.",
-          scenario: "plugins",
-          tags: ["update"],
-        },
-      ],
-    },
 
-    // ---------- LOKI ----------
-    loki: {
-      label: "loki",
-      name: "Loki",
-      kind: "Logs",
-      summary: "LogQL queries for label-based, time-series logs.",
-      badges: ["LogQL", "logs"],
-      scenarios: {
-        logs: "Search logs by label and message.",
-        aggregates: "Aggregate log streams.",
+      // ---------- LOKI ----------
+      loki: {
+        label: "loki",
+        name: "Loki",
+        kind: "Logs",
+        summary: "LogQL queries for label-based, time-series logs.",
+        badges: ["LogQL", "logs"],
+        scenarios: {
+          logs: "Search logs by label and message.",
+          aggregates: "Aggregate log streams.",
+        },
+        flows: [
+          {
+            id: "loki-basic-logs",
+            title: "Filter by label → grep message",
+            level: "logs",
+            steps: ['{app="api"}', '{app="api"} |= "error"'],
+          },
+        ],
+        commands: [
+          {
+            cmd: '{app="api"}',
+            desc: "All logs for app=api.",
+            scenario: "logs",
+            tags: ["label"],
+          },
+          {
+            cmd: '{app="api"} |= "error"',
+            desc: "Logs for app=api containing 'error'.",
+            scenario: "logs",
+            tags: ["error"],
+          },
+          {
+            cmd: 'sum by (status) (count_over_time({app="api"}[5m]))',
+            desc: "Count logs per status in 5m window.",
+            scenario: "aggregates",
+            tags: ["count"],
+          },
+        ],
       },
-      flows: [
-        {
-          id: "loki-basic-logs",
-          title: "Filter by label → grep message",
-          level: "logs",
-          steps: [
-            "{app=\"api\"}",
-            "{app=\"api\"} |= \"error\"",
-          ],
-        },
-      ],
-      commands: [
-        {
-          cmd: "{app=\"api\"}",
-          desc: "All logs for app=api.",
-          scenario: "logs",
-          tags: ["label"],
-        },
-        {
-          cmd: "{app=\"api\"} |= \"error\"",
-          desc: "Logs for app=api containing 'error'.",
-          scenario: "logs",
-          tags: ["error"],
-        },
-        {
-          cmd: "sum by (status) (count_over_time({app=\"api\"}[5m]))",
-          desc: "Count logs per status in 5m window.",
-          scenario: "aggregates",
-          tags: ["count"],
-        },
-      ],
-    },
 
-    // ---------- ELK ----------
-    elk: {
-      label: "elk",
-      name: "ELK",
-      kind: "Logs",
-      summary: "Elasticsearch/Kibana daily commands and queries for log analysis.",
-      badges: ["Elasticsearch", "Kibana"],
-      scenarios: {
-        index: "List and inspect indices.",
-        search: "Search logs with filters.",
+      // ---------- ELK ----------
+      elk: {
+        label: "elk",
+        name: "ELK",
+        kind: "Logs",
+        summary:
+          "Elasticsearch/Kibana daily commands and queries for log analysis.",
+        badges: ["Elasticsearch", "Kibana"],
+        scenarios: {
+          index: "List and inspect indices.",
+          search: "Search logs with filters.",
+        },
+        flows: [
+          {
+            id: "elk-search-logs",
+            title: "List indices → Search recent logs",
+            level: "logs",
+            steps: [
+              "curl -X GET 'http://localhost:9200/_cat/indices?v'",
+              'curl -X GET \'http://localhost:9200/logs-*/_search?pretty\' -H \'Content-Type: application/json\' -d \'{"query":{"match":{"message":"error"}}}\'',
+            ],
+          },
+        ],
+        commands: [
+          {
+            cmd: "curl -X GET 'http://localhost:9200/_cat/indices?v'",
+            desc: "List Elasticsearch indices.",
+            scenario: "index",
+            tags: ["indices"],
+          },
+          {
+            cmd: "curl -X GET 'http://localhost:9200/logs-*/_search?pretty' -H 'Content-Type: application/json' -d '{\"query\":{\"match_all\":{}}}'",
+            desc: "Basic search on logs indices.",
+            scenario: "search",
+            tags: ["search"],
+          },
+          {
+            cmd: 'curl -X GET \'http://localhost:9200/logs-*/_search?pretty\' -H \'Content-Type: application/json\' -d \'{"query":{"match":{"message":"error"}}}\'',
+            desc: "Search logs where message contains 'error'.",
+            scenario: "search",
+            tags: ["error"],
+          },
+        ],
       },
-      flows: [
-        {
-          id: "elk-search-logs",
-          title: "List indices → Search recent logs",
-          level: "logs",
-          steps: [
-            "curl -X GET 'http://localhost:9200/_cat/indices?v'",
-            "curl -X GET 'http://localhost:9200/logs-*/_search?pretty' -H 'Content-Type: application/json' -d '{\"query\":{\"match\":{\"message\":\"error\"}}}'",
-          ],
-        },
-      ],
-      commands: [
-        {
-          cmd: "curl -X GET 'http://localhost:9200/_cat/indices?v'",
-          desc: "List Elasticsearch indices.",
-          scenario: "index",
-          tags: ["indices"],
-        },
-        {
-          cmd: "curl -X GET 'http://localhost:9200/logs-*/_search?pretty' -H 'Content-Type: application/json' -d '{\"query\":{\"match_all\":{}}}'",
-          desc: "Basic search on logs indices.",
-          scenario: "search",
-          tags: ["search"],
-        },
-        {
-          cmd: "curl -X GET 'http://localhost:9200/logs-*/_search?pretty' -H 'Content-Type: application/json' -d '{\"query\":{\"match\":{\"message\":\"error\"}}}'",
-          desc: "Search logs where message contains 'error'.",
-          scenario: "search",
-          tags: ["error"],
-        },
-      ],
-    },
 
-    // ---------- SECURITY & SECRETS ----------
-    security: {
-      label: "security",
-      name: "Security & Secrets",
-      kind: "Security",
-      summary: "Vault, KMS, and SOPS for secrets, encryption, and key management.",
-      badges: ["Vault", "KMS", "SOPS"],
-      scenarios: {
-        vault: "Read/write secrets from Vault KV.",
-        kms: "Encrypt/decrypt using KMS.",
-        sops: "Manage encrypted YAML/JSON with SOPS.",
+      // ---------- SECURITY & SECRETS ----------
+      security: {
+        label: "security",
+        name: "Security & Secrets",
+        kind: "Security",
+        summary:
+          "Vault, KMS, and SOPS for secrets, encryption, and key management.",
+        badges: ["Vault", "KMS", "SOPS"],
+        scenarios: {
+          vault: "Read/write secrets from Vault KV.",
+          kms: "Encrypt/decrypt using KMS.",
+          sops: "Manage encrypted YAML/JSON with SOPS.",
+        },
+        flows: [
+          {
+            id: "vault-basic-secret",
+            title: "Login → Read → Write secret",
+            level: "security",
+            steps: [
+              "vault login",
+              "vault kv get secret/app/config",
+              "vault kv put secret/app/config DB_PASSWORD=***",
+            ],
+          },
+        ],
+        commands: [
+          {
+            cmd: "vault login",
+            desc: "Authenticate to Vault.",
+            scenario: "vault",
+            tags: ["vault", "login"],
+          },
+          {
+            cmd: "vault kv get secret/app/config",
+            desc: "Read secret from KV store.",
+            scenario: "vault",
+            tags: ["kv", "get"],
+          },
+          {
+            cmd: "vault kv put secret/app/config DB_PASSWORD=***",
+            desc: "Write secret to KV store.",
+            scenario: "vault",
+            tags: ["kv", "put"],
+          },
+          {
+            cmd: "aws kms encrypt --key-id <key-id> --plaintext fileb://secret.txt --output text --query CiphertextBlob",
+            desc: "Encrypt data with AWS KMS.",
+            scenario: "kms",
+            tags: ["kms", "encrypt"],
+          },
+          {
+            cmd: "aws kms decrypt --ciphertext-blob fileb://blob.b64 --output text --query Plaintext | base64 --decode",
+            desc: "Decrypt data with AWS KMS.",
+            scenario: "kms",
+            tags: ["kms", "decrypt"],
+          },
+          {
+            cmd: "sops secret.yaml",
+            desc: "Edit encrypted YAML with SOPS.",
+            scenario: "sops",
+            tags: ["sops", "edit"],
+          },
+          {
+            cmd: "sops -d secret.yaml > secret.decrypted.yaml",
+            desc: "Decrypt file to plaintext.",
+            scenario: "sops",
+            tags: ["decrypt"],
+          },
+        ],
       },
-      flows: [
-        {
-          id: "vault-basic-secret",
-          title: "Login → Read → Write secret",
-          level: "security",
-          steps: [
-            "vault login",
-            "vault kv get secret/app/config",
-            "vault kv put secret/app/config DB_PASSWORD=***",
-          ],
-        },
-      ],
-      commands: [
-        {
-          cmd: "vault login",
-          desc: "Authenticate to Vault.",
-          scenario: "vault",
-          tags: ["vault", "login"],
-        },
-        {
-          cmd: "vault kv get secret/app/config",
-          desc: "Read secret from KV store.",
-          scenario: "vault",
-          tags: ["kv", "get"],
-        },
-        {
-          cmd: "vault kv put secret/app/config DB_PASSWORD=***",
-          desc: "Write secret to KV store.",
-          scenario: "vault",
-          tags: ["kv", "put"],
-        },
-        {
-          cmd: "aws kms encrypt --key-id <key-id> --plaintext fileb://secret.txt --output text --query CiphertextBlob",
-          desc: "Encrypt data with AWS KMS.",
-          scenario: "kms",
-          tags: ["kms", "encrypt"],
-        },
-        {
-          cmd: "aws kms decrypt --ciphertext-blob fileb://blob.b64 --output text --query Plaintext | base64 --decode",
-          desc: "Decrypt data with AWS KMS.",
-          scenario: "kms",
-          tags: ["kms", "decrypt"],
-        },
-        {
-          cmd: "sops secret.yaml",
-          desc: "Edit encrypted YAML with SOPS.",
-          scenario: "sops",
-          tags: ["sops", "edit"],
-        },
-        {
-          cmd: "sops -d secret.yaml > secret.decrypted.yaml",
-          desc: "Decrypt file to plaintext.",
-          scenario: "sops",
-          tags: ["decrypt"],
-        },
-      ],
-    },
-  };
+    };
 
-  // Flat list for sidebar, in the order you specified
-  const toolOrder = [
-    "docker",
-    "kubernetes",
-    "git",
-    "helm",
-    "jenkins",
-    "github_actions",
-    "gitlab_ci",
-    "terraform",
-    "ansible",
-    "aws",
-    "azure",
-    "gcloud",
-    "prometheus",
-    "grafana",
-    "loki",
-    "elk",
-    "security",
-  ];
+    // Flat list for sidebar, in the order you specified
+    const toolOrder = [
+      "docker",
+      "kubernetes",
+      "git",
+      "helm",
+      "jenkins",
+      "github_actions",
+      "gitlab_ci",
+      "terraform",
+      "ansible",
+      "aws",
+      "azure",
+      "gcloud",
+      "prometheus",
+      "grafana",
+      "loki",
+      "elk",
+      "security",
+    ];
 
-  const toolListEl = document.getElementById("tool-list");
-  const commandsListEl = document.getElementById("commands-list");
-  const commandsSubtitleEl = document.getElementById("commands-subtitle");
-  const searchInputEl = document.getElementById("search-input");
-  const scenarioSelectEl = document.getElementById("scenario-select");
-  const scenarioPillsEl = document.getElementById("scenario-pills");
-  const currentToolLabelEl = document.getElementById("current-tool-label");
-  const currentToolKindEl = document.getElementById("current-tool-kind");
-  const currentToolSummaryEl = document.getElementById("current-tool-summary");
-  const statVisibleEl = document.getElementById("stat-visible");
-  const statScenariosEl = document.getElementById("stat-scenarios");
-  const toolSummaryTextEl = document.getElementById("tool-summary-text");
-  const toolBadgesEl = document.getElementById("tool-badges");
-  const flowListEl = document.getElementById("flow-list");
-  const flowStepsEl = document.getElementById("flow-steps");
-  const toastEl = document.getElementById("toast");
-  const toastLabelEl = document.getElementById("toast-label");
+    const toolListEl = document.getElementById("tool-list");
+    const commandsListEl = document.getElementById("commands-list");
+    const commandsSubtitleEl = document.getElementById("commands-subtitle");
+    const searchInputEl = document.getElementById("search-input");
+    const scenarioSelectEl = document.getElementById("scenario-select");
+    const scenarioPillsEl = document.getElementById("scenario-pills");
+    const currentToolLabelEl = document.getElementById("current-tool-label");
+    const currentToolKindEl = document.getElementById("current-tool-kind");
+    const currentToolSummaryEl = document.getElementById(
+      "current-tool-summary"
+    );
+    const statVisibleEl = document.getElementById("stat-visible");
+    const statScenariosEl = document.getElementById("stat-scenarios");
+    const toolSummaryTextEl = document.getElementById("tool-summary-text");
+    const toolBadgesEl = document.getElementById("tool-badges");
+    const flowListEl = document.getElementById("flow-list");
+    const flowStepsEl = document.getElementById("flow-steps");
+    const toastEl = document.getElementById("toast");
+    const toastLabelEl = document.getElementById("toast-label");
 
-  let activeToolId = "docker";
-  let activeScenario = "all";
-  let activeFlowId = null;
+    let activeToolId = "docker";
+    let activeScenario = "all";
+    let activeFlowId = null;
 
-  function createToolSidebar() {
-    toolListEl.innerHTML = "";
-    toolOrder.forEach((id) => {
-      const tool = tools[id];
-      if (!tool) return;
-      const el = document.createElement("div");
-      el.className = "tool-item" + (id === activeToolId ? " active" : "");
-      el.dataset.toolId = id;
-      el.innerHTML = `
+    function createToolSidebar() {
+      toolListEl.innerHTML = "";
+      toolOrder.forEach((id) => {
+        const tool = tools[id];
+        if (!tool) return;
+        const el = document.createElement("div");
+        el.className = "tool-item" + (id === activeToolId ? " active" : "");
+        el.dataset.toolId = id;
+        el.innerHTML = `
         <div class="tool-item-main">
           <span class="tool-name">${tool.name}</span>
           <div class="tool-meta">
@@ -2379,96 +2982,103 @@
         </div>
         <span class="tool-badge">${tool.label}</span>
       `;
-      el.addEventListener("click", () => {
-        setActiveTool(id);
+        el.addEventListener("click", () => {
+          setActiveTool(id);
+        });
+        toolListEl.appendChild(el);
       });
-      toolListEl.appendChild(el);
-    });
-  }
+    }
 
-  function setActiveTool(id) {
-    if (!tools[id]) return;
-    activeToolId = id;
-    activeScenario = "all";
-    activeFlowId = null;
-    document
-      .querySelectorAll(".tool-item")
-      .forEach((el) => el.classList.toggle("active", el.dataset.toolId === id));
-    renderTool();
-  }
-
-  function renderTool() {
-    const tool = tools[activeToolId];
-    if (!tool) return;
-
-    currentToolLabelEl.textContent = tool.label;
-    currentToolKindEl.textContent = tool.kind;
-    currentToolSummaryEl.textContent = tool.summary;
-    commandsSubtitleEl.textContent = `${tool.name} · daily-use commands`;
-    toolSummaryTextEl.textContent =
-      "Scenarios are tailored per tool so you always see the right subset: " +
-      Object.keys(tool.scenarios)
-        .map((k) => k)
-        .join(", ") +
-      ".";
-
-    toolBadgesEl.innerHTML = "";
-    (tool.badges || []).forEach((b) => {
-      const span = document.createElement("span");
-      span.textContent = b;
-      toolBadgesEl.appendChild(span);
-    });
-
-    scenarioSelectEl.innerHTML = '<option value="all">All scenarios</option>';
-    scenarioPillsEl.innerHTML = "";
-    Object.entries(tool.scenarios).forEach(([id, label]) => {
-      const opt = document.createElement("option");
-      opt.value = id;
-      opt.textContent = id;
-      scenarioSelectEl.appendChild(opt);
-
-      const pill = document.createElement("button");
-      pill.type = "button";
-      pill.className = "filter-pill" + (activeScenario === id ? " active" : "");
-      pill.dataset.scenario = id;
-      pill.textContent = id;
-      pill.title = label;
-      pill.addEventListener("click", () => {
-        activeScenario = activeScenario === id ? "all" : id;
-        renderTool();
-      });
-      scenarioPillsEl.appendChild(pill);
-    });
-
-    scenarioSelectEl.value = activeScenario;
-    scenarioSelectEl.onchange = (e) => {
-      activeScenario = e.target.value || "all";
+    function setActiveTool(id) {
+      if (!tools[id]) return;
+      activeToolId = id;
+      activeScenario = "all";
+      activeFlowId = null;
+      document
+        .querySelectorAll(".tool-item")
+        .forEach((el) =>
+          el.classList.toggle("active", el.dataset.toolId === id)
+        );
       renderTool();
-    };
+    }
 
-    renderCommands();
-    renderFlows();
-    statScenariosEl.textContent = Object.keys(tool.scenarios).length;
-  }
+    function renderTool() {
+      const tool = tools[activeToolId];
+      if (!tool) return;
 
-  function renderCommands() {
-    const tool = tools[activeToolId];
-    const q = (searchInputEl.value || "").toLowerCase().trim();
-    commandsListEl.innerHTML = "";
-    let visibleCount = 0;
+      currentToolLabelEl.textContent = tool.label;
+      currentToolKindEl.textContent = tool.kind;
+      currentToolSummaryEl.textContent = tool.summary;
+      commandsSubtitleEl.textContent = `${tool.name} · daily-use commands`;
+      toolSummaryTextEl.textContent =
+        "Scenarios are tailored per tool so you always see the right subset: " +
+        Object.keys(tool.scenarios)
+          .map((k) => k)
+          .join(", ") +
+        ".";
 
-    tool.commands.forEach((c) => {
-      if (activeScenario !== "all" && c.scenario !== activeScenario) return;
-      if (q) {
-        const haystack = [c.cmd, c.desc, ...(c.tags || [])].join(" ").toLowerCase();
-        if (!haystack.includes(q)) return;
-      }
+      toolBadgesEl.innerHTML = "";
+      (tool.badges || []).forEach((b) => {
+        const span = document.createElement("span");
+        span.textContent = b;
+        toolBadgesEl.appendChild(span);
+      });
 
-      const item = document.createElement("div");
-      item.className = "cmd-item";
-      const scenarioLabel = c.scenario || "general";
-      const truncatedCmd = c.cmd.length > 100 ? c.cmd.slice(0, 96) + "…" : c.cmd;
-      item.innerHTML = `
+      scenarioSelectEl.innerHTML =
+        '<option value="all">All scenarios</option>';
+      scenarioPillsEl.innerHTML = "";
+      Object.entries(tool.scenarios).forEach(([id, label]) => {
+        const opt = document.createElement("option");
+        opt.value = id;
+        opt.textContent = id;
+        scenarioSelectEl.appendChild(opt);
+
+        const pill = document.createElement("button");
+        pill.type = "button";
+        pill.className =
+          "filter-pill" + (activeScenario === id ? " active" : "");
+        pill.dataset.scenario = id;
+        pill.textContent = id;
+        pill.title = label;
+        pill.addEventListener("click", () => {
+          activeScenario = activeScenario === id ? "all" : id;
+          renderTool();
+        });
+        scenarioPillsEl.appendChild(pill);
+      });
+
+      scenarioSelectEl.value = activeScenario;
+      scenarioSelectEl.onchange = (e) => {
+        activeScenario = e.target.value || "all";
+        renderTool();
+      };
+
+      renderCommands();
+      renderFlows();
+      statScenariosEl.textContent = Object.keys(tool.scenarios).length;
+    }
+
+    function renderCommands() {
+      const tool = tools[activeToolId];
+      const q = (searchInputEl.value || "").toLowerCase().trim();
+      commandsListEl.innerHTML = "";
+      let visibleCount = 0;
+
+      tool.commands.forEach((c) => {
+        if (activeScenario !== "all" && c.scenario !== activeScenario) return;
+        if (q) {
+          const haystack = [c.cmd, c.desc, ...(c.tags || [])]
+            .join(" ")
+            .toLowerCase();
+          if (!haystack.includes(q)) return;
+        }
+
+        const item = document.createElement("div");
+        item.className = "cmd-item";
+        const scenarioLabel = c.scenario || "general";
+        const truncatedCmd =
+          c.cmd.length > 100 ? c.cmd.slice(0, 96) + "…" : c.cmd;
+        item.innerHTML = `
         <div class="cmd-header">
           <div class="cmd-main-line"><span class="prompt-sign">$</span> ${truncatedCmd}</div>
           <button class="cmd-copy-btn" type="button">
@@ -2481,207 +3091,228 @@
           ${(c.tags || [])
             .map((t) => `<span class="cmd-tag">${t}</span>`)
             .join("")}
-          ${c.hot ? '<span class="cmd-hotness"><span class="dot"></span>hot 20%</span>' : ""}
+          ${c.hot
+            ? '<span class="cmd-hotness"><span class="dot"></span>hot 20%</span>'
+            : ""
+          }
         </div>
       `;
 
-      const copyBtn = item.querySelector(".cmd-copy-btn");
-      copyBtn.addEventListener("click", () => {
-        navigator.clipboard
-          .writeText(c.cmd)
-          .then(() => showToast(truncatedCmd))
-          .catch(() => showToast("Clipboard blocked by browser"));
+        const copyBtn = item.querySelector(".cmd-copy-btn");
+        copyBtn.addEventListener("click", () => {
+          navigator.clipboard
+            .writeText(c.cmd)
+            .then(() => showToast(truncatedCmd))
+            .catch(() => showToast("Clipboard blocked by browser"));
+        });
+
+        commandsListEl.appendChild(item);
+        visibleCount += 1;
       });
 
-      commandsListEl.appendChild(item);
-      visibleCount += 1;
-    });
-
-    if (!visibleCount) {
-      const empty = document.createElement("div");
-      empty.className = "cmd-item";
-      empty.innerHTML = `
+      if (!visibleCount) {
+        const empty = document.createElement("div");
+        empty.className = "cmd-item";
+        empty.innerHTML = `
         <div class="cmd-desc">
           No commands matched this filter. Try broadening the scenario or clearing the search.
         </div>
       `;
-      commandsListEl.appendChild(empty);
+        commandsListEl.appendChild(empty);
+      }
+
+      statVisibleEl.textContent = visibleCount;
     }
 
-    statVisibleEl.textContent = visibleCount;
-  }
-
-  function renderFlows() {
-    const tool = tools[activeToolId];
-    flowListEl.innerHTML = "";
-    (tool.flows || []).forEach((f) => {
-      const el = document.createElement("div");
-      el.className = "flow-item";
-      el.dataset.flowId = f.id;
-      el.innerHTML = `
+    function renderFlows() {
+      const tool = tools[activeToolId];
+      flowListEl.innerHTML = "";
+      (tool.flows || []).forEach((f) => {
+        const el = document.createElement("div");
+        el.className = "flow-item";
+        el.dataset.flowId = f.id;
+        el.innerHTML = `
         <div class="flow-title">${f.title}</div>
         <div class="flow-meta">
           <span>${f.level}</span>
           <span>${f.steps.length} steps</span>
         </div>
       `;
-      el.addEventListener("click", () => {
-        activeFlowId = f.id;
-        renderFlowSteps();
+        el.addEventListener("click", () => {
+          activeFlowId = f.id;
+          renderFlowSteps();
+        });
+        flowListEl.appendChild(el);
       });
-      flowListEl.appendChild(el);
-    });
 
-    renderFlowSteps();
-  }
-
-  function renderFlowSteps() {
-    const tool = tools[activeToolId];
-    if (!tool.flows || !tool.flows.length) {
-      flowStepsEl.textContent = "No flows defined yet for this tool.";
-      return;
+      renderFlowSteps();
     }
 
-    const flow = tool.flows.find((f) => f.id === activeFlowId) || tool.flows[0];
-    activeFlowId = flow.id;
+    function renderFlowSteps() {
+      const tool = tools[activeToolId];
+      if (!tool.flows || !tool.flows.length) {
+        flowStepsEl.textContent = "No flows defined yet for this tool.";
+        return;
+      }
 
-    flowStepsEl.innerHTML = flow.steps
-      .map(
-        (cmd, idx) => `
+      const flow =
+        tool.flows.find((f) => f.id === activeFlowId) || tool.flows[0];
+      activeFlowId = flow.id;
+
+      flowStepsEl.innerHTML = flow.steps
+        .map(
+          (cmd, idx) => `
       <div style="margin-bottom:6px;">
-        <div style="font-size:11px;color:var(--text-soft);margin-bottom:2px;">Step ${idx + 1}</div>
+        <div style="font-size:11px;color:var(--text-soft);margin-bottom:2px;">Step ${idx + 1
+            }</div>
         <div class="cmd-item" style="padding:6px 8px;">
           <div class="cmd-header">
             <div class="cmd-main-line"><span class="prompt-sign">$</span> ${cmd}</div>
-            <button class="cmd-copy-btn" type="button" data-flow-cmd="${encodeURIComponent(cmd)}">
+            <button class="cmd-copy-btn" type="button" data-flow-cmd="${encodeURIComponent(
+              cmd
+            )}">
               <span>Copy</span>
             </button>
           </div>
         </div>
       </div>
     `
-      )
-      .join("");
+        )
+        .join("");
 
-    flowStepsEl.querySelectorAll("[data-flow-cmd]").forEach((btn) => {
-      const cmd = decodeURIComponent(btn.dataset.flowCmd);
-      btn.addEventListener("click", () => {
-        navigator.clipboard
-          .writeText(cmd)
-          .then(() => showToast(cmd.length > 80 ? cmd.slice(0, 76) + "…" : cmd))
-          .catch(() => showToast("Clipboard blocked by browser"));
+      flowStepsEl.querySelectorAll("[data-flow-cmd]").forEach((btn) => {
+        const cmd = decodeURIComponent(btn.dataset.flowCmd);
+        btn.addEventListener("click", () => {
+          navigator.clipboard
+            .writeText(cmd)
+            .then(() =>
+              showToast(cmd.length > 80 ? cmd.slice(0, 76) + "…" : cmd)
+            )
+            .catch(() => showToast("Clipboard blocked by browser"));
+        });
       });
+    }
+
+    function showToast(label) {
+      toastLabelEl.textContent = label;
+      toastEl.classList.add("visible");
+      clearTimeout(showToast._timer);
+      showToast._timer = setTimeout(() => {
+        toastEl.classList.remove("visible");
+      }, 2000);
+    }
+
+    searchInputEl.addEventListener("input", () => {
+      renderCommands();
     });
-  }
 
-  function showToast(label) {
-    toastLabelEl.textContent = label;
-    toastEl.classList.add("visible");
-    clearTimeout(showToast._timer);
-    showToast._timer = setTimeout(() => {
-      toastEl.classList.remove("visible");
-    }, 2000);
-  }
-
-  searchInputEl.addEventListener("input", () => {
-    renderCommands();
-  });
-
-  window.addEventListener("keydown", (e) => {
-    if (e.key === "/" && document.activeElement !== searchInputEl) {
-      e.preventDefault();
-      searchInputEl.focus();
-    }
-    if (e.key.toLowerCase() === "t") {
-      const idx = toolOrder.indexOf(activeToolId);
-      const next = toolOrder[(idx + 1) % toolOrder.length];
-      setActiveTool(next);
-    }
-    if (e.key.toLowerCase() === "s") {
-      const tool = tools[activeToolId];
-      const ids = Object.keys(tool.scenarios);
-      if (!ids.length) return;
-      if (activeScenario === "all") {
-        activeScenario = ids[0];
-      } else {
-        const idx = ids.indexOf(activeScenario);
-        const next = ids[(idx + 1) % ids.length];
-        activeScenario = next;
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "/" && document.activeElement !== searchInputEl) {
+        e.preventDefault();
+        searchInputEl.focus();
       }
+      if (e.key.toLowerCase() === "t") {
+        const idx = toolOrder.indexOf(activeToolId);
+        const next = toolOrder[(idx + 1) % toolOrder.length];
+        setActiveTool(next);
+      }
+      if (e.key.toLowerCase() === "s") {
+        const tool = tools[activeToolId];
+        const ids = Object.keys(tool.scenarios);
+        if (!ids.length) return;
+        if (activeScenario === "all") {
+          activeScenario = ids[0];
+        } else {
+          const idx = ids.indexOf(activeScenario);
+          const next = ids[(idx + 1) % ids.length];
+          activeScenario = next;
+        }
+        renderTool();
+      }
+    });
+
+    // --- Three.js simple visual ---
+    function initHeroCanvas() {
+      const canvas = document.getElementById("hero-canvas");
+      if (!canvas || typeof THREE === "undefined") return;
+
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(
+        45,
+        canvas.clientWidth / canvas.clientHeight,
+        0.1,
+        1000
+      );
+      const renderer = new THREE.WebGLRenderer({
+        canvas,
+        alpha: true,
+        antialias: true,
+      });
+      renderer.setPixelRatio(window.devicePixelRatio || 1);
+      renderer.setSize(canvas.clientWidth, canvas.clientHeight, false);
+
+      const geo = new THREE.IcosahedronGeometry(6, 1);
+      const mat = new THREE.MeshStandardMaterial({
+        color: 0x38bdf8,
+        transparent: true,
+        opacity: 0.2,
+        wireframe: true,
+      });
+      const mesh = new THREE.Mesh(geo, mat);
+      scene.add(mesh);
+
+      const pointsGeo = new THREE.BufferGeometry();
+      const positions = [];
+      for (let i = 0; i < 150; i++) {
+        positions.push((Math.random() - 0.5) * 50);
+        positions.push((Math.random() - 0.5) * 30);
+        positions.push((Math.random() - 0.5) * 30);
+      }
+      pointsGeo.setAttribute(
+        "position",
+        new THREE.Float32BufferAttribute(positions, 3)
+      );
+      const pointsMat = new THREE.PointsMaterial({
+        color: 0x38bdf8,
+        size: 0.12,
+        transparent: true,
+        opacity: 0.65,
+      });
+      const points = new THREE.Points(pointsGeo, pointsMat);
+      scene.add(points);
+
+      const light = new THREE.PointLight(0x38bdf8, 1.2);
+      light.position.set(15, 20, 10);
+      scene.add(light);
+      scene.add(new THREE.AmbientLight(0x0f172a, 0.8));
+
+      camera.position.set(0, 0, 26);
+
+      function resize() {
+        const w = canvas.clientWidth;
+        const h = canvas.clientHeight;
+        renderer.setSize(w, h, false);
+        camera.aspect = w / h;
+        camera.updateProjectionMatrix();
+      }
+      window.addEventListener("resize", resize);
+
+      function animate() {
+        requestAnimationFrame(animate);
+        mesh.rotation.y += 0.0035;
+        mesh.rotation.x += 0.0015;
+        points.rotation.y -= 0.0008;
+        renderer.render(scene, camera);
+      }
+      animate();
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      createToolSidebar();
       renderTool();
-    }
-  });
-
-  // --- Three.js simple visual ---
-  function initHeroCanvas() {
-    const canvas = document.getElementById("hero-canvas");
-    if (!canvas || typeof THREE === "undefined") return;
-
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(45, canvas.clientWidth / canvas.clientHeight, 0.1, 1000);
-    const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
-    renderer.setPixelRatio(window.devicePixelRatio || 1);
-    renderer.setSize(canvas.clientWidth, canvas.clientHeight, false);
-
-    const geo = new THREE.IcosahedronGeometry(6, 1);
-    const mat = new THREE.MeshStandardMaterial({
-      color: 0x38bdf8,
-      transparent: true,
-      opacity: 0.2,
-      wireframe: true,
+      initHeroCanvas();
     });
-    const mesh = new THREE.Mesh(geo, mat);
-    scene.add(mesh);
-
-    const pointsGeo = new THREE.BufferGeometry();
-    const positions = [];
-    for (let i = 0; i < 150; i++) {
-      positions.push((Math.random() - 0.5) * 50);
-      positions.push((Math.random() - 0.5) * 30);
-      positions.push((Math.random() - 0.5) * 30);
-    }
-    pointsGeo.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
-    const pointsMat = new THREE.PointsMaterial({
-      color: 0x38bdf8,
-      size: 0.12,
-      transparent: true,
-      opacity: 0.65,
-    });
-    const points = new THREE.Points(pointsGeo, pointsMat);
-    scene.add(points);
-
-    const light = new THREE.PointLight(0x38bdf8, 1.2);
-    light.position.set(15, 20, 10);
-    scene.add(light);
-    scene.add(new THREE.AmbientLight(0x0f172a, 0.8));
-
-    camera.position.set(0, 0, 26);
-
-    function resize() {
-      const w = canvas.clientWidth;
-      const h = canvas.clientHeight;
-      renderer.setSize(w, h, false);
-      camera.aspect = w / h;
-      camera.updateProjectionMatrix();
-    }
-    window.addEventListener("resize", resize);
-
-    function animate() {
-      requestAnimationFrame(animate);
-      mesh.rotation.y += 0.0035;
-      mesh.rotation.x += 0.0015;
-      points.rotation.y -= 0.0008;
-      renderer.render(scene, camera);
-    }
-    animate();
-  }
-
-  document.addEventListener("DOMContentLoaded", () => {
-    createToolSidebar();
-    renderTool();
-    initHeroCanvas();
-  });
-</script>
-
+  </script>
 </body>
+
 </html>
